@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Fira_Code, Fira_Mono } from "next/font/google";
 import "./globals.css";
-
-const firaCode = Fira_Code({ 
-    weight: ['400'],
-    variable: "--font-fira-code",
-    subsets: ["latin"],
-});
-const firaMono = Fira_Mono({ 
-  weight: ['400'],
-  variable: "--font-fira-mono",
-  subsets: ["latin"],
-});
+import { ReduxProvider } from "./Provider/provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased bg-black flex flex-col items-center justify-center`} 
+        className={`antialiased flex flex-col items-center justify-center`} 
       >
-        {children}
+        <ReduxProvider>
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   );
