@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { Montserrat } from "next/font/google";
 import { ReduxProvider } from "./Provider/provider";
+import "./globals.css";
+
+// Initialize the Montserrat font
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400"], // Add multiple weights as needed
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,10 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`antialiased flex flex-col items-center justify-center`} 
-      >
+    <html lang="en" className={montserrat.className}>
+      <body className="antialiased flex flex-col items-center justify-center">
         <ReduxProvider>
           {children}
         </ReduxProvider>
