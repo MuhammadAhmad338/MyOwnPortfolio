@@ -3,6 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, { FC } from 'react';
 import home from '../../public/home.png';
+import user from '../../public/user.png';
+import lightmode from '../../public/lightmode.png';
+import darkmode from '../../public/darkmode.png';
+import calendar from '../../public/calendar.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -19,7 +23,7 @@ const NavBar: FC = () => {
       <div className="p-4" style={{ maxWidth: '608px', width: '100%' }}>
         <nav className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} px-4 py-3 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`}>
           {/* Left side navigation icons */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-8">
             {/* Home icon */}
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
@@ -32,8 +36,7 @@ const NavBar: FC = () => {
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
               <Link href='/about'>
-              <Image src={home} alt="Profile" width={24} height={24} />
-
+                <Image src={user} alt="Profile" width={24} height={24} />
               </Link>
             </button>
 
@@ -41,16 +44,7 @@ const NavBar: FC = () => {
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
               <Link href='/project'>
-              <Image src={home} alt="Profile" width={24} height={24} />
-
-              </Link>
-            </button>
-
-            {/* Shopping bag icon */}
-            <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
-              {/* Replace with your own icon */}
-              <Link href='/product'>
-              <Image src={home} alt="Profile" width={24} height={24} />
+                <Image src={calendar} alt="Profile" width={24} height={24} />
 
               </Link>
             </button>
@@ -64,18 +58,19 @@ const NavBar: FC = () => {
               className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}
             >
               {darkMode ? (
-                <Image src={home} alt="Light Mode" width={24} height={24} />
+                <Image src={lightmode} alt="Light Mode" width={24} height={24} />
               ) : (
-                <Image src={home} alt="Dark Mode " width={24} height={24} />
+                <Image src={darkmode} alt="Dark Mode " width={24} height={24} />
               )}
             </button>
 
             {/* Hire Me button */}
-            <button className={`${darkMode ? 'bg-zinc-700 hover:bg-zinc-600' : 'bg-gray-200 hover:bg-gray-300'} ${darkMode ? 'text-white' : 'text-gray-800'} px-4 py-2 rounded-lg flex items-center space-x-2 focus:outline-none transition-colors duration-200`}>
-              <Link href='/contact'>
-              <span className="font-bold text-sm">Hire Me</span>
-              </Link>
-            </button>
+            <Link href='/contact'>
+              <button className={`${darkMode ? 'bg-zinc-700 hover:bg-zinc-600' : 'bg-gray-200 hover:bg-gray-300'} ${darkMode ? 'text-white' : 'text-gray-800'} px-4 py-2 rounded-lg flex items-center space-x-2 focus:outline-none transition-colors duration-200`}>
+                <span className="font-bold text-sm">Hire Me</span>
+              </button>
+            </Link>
+
           </div>
         </nav>
       </div>
