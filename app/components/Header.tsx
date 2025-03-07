@@ -1,12 +1,13 @@
 'use client';
-import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
+import React, { FC } from 'react';
 import home from '../../public/home.png';
-import { useSelector, useDispatch } from 'react-redux';
 import { toggleDarkMode } from '../Slices/themeSlice';
+import { useSelector, useDispatch } from 'react-redux';
 
-const NavBar = () => {
-  const darkMode = useSelector((state: any) => state.theme.darkMode); 
+const NavBar: FC = () => {
+  const darkMode = useSelector((state: any) => state.theme.darkMode);
   const dispatch = useDispatch();
 
   const handleToggleTheme = () => {
@@ -14,41 +15,52 @@ const NavBar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full "> 
-      <div className="p-4" style={{ maxWidth: '608px', width: '100%' }}> 
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full ">
+      <div className="p-4" style={{ maxWidth: '608px', width: '100%' }}>
         <nav className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} px-4 py-3 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`}>
           {/* Left side navigation icons */}
-          <div className="flex space-x-6">
+          <div className="flex space-x-4">
             {/* Home icon */}
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
-              <Image src={home} alt="Home" width={24} height={24} />
+              <Link href={"/home"}>
+                <Image src={home} alt="Profile" width={24} height={24} />
+              </Link>
             </button>
 
             {/* Profile icon */}
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
+              <Link href='/about'>
               <Image src={home} alt="Profile" width={24} height={24} />
+
+              </Link>
             </button>
 
             {/* Calendar icon */}
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
-              <Image src={home} alt="Calendar" width={24} height={24} />
+              <Link href='/project'>
+              <Image src={home} alt="Profile" width={24} height={24} />
+
+              </Link>
             </button>
 
             {/* Shopping bag icon */}
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
-              <Image src={home} alt="Shopping" width={24} height={24} />
+              <Link href='/product'>
+              <Image src={home} alt="Profile" width={24} height={24} />
+
+              </Link>
             </button>
           </div>
 
           {/* Right side with theme toggle and CTA button */}
           <div className="flex items-center space-x-4">
             {/* Theme toggle */}
-            <button 
-              onClick={handleToggleTheme} 
+            <button
+              onClick={handleToggleTheme}
               className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}
             >
               {darkMode ? (
@@ -60,7 +72,9 @@ const NavBar = () => {
 
             {/* Hire Me button */}
             <button className={`${darkMode ? 'bg-zinc-700 hover:bg-zinc-600' : 'bg-gray-200 hover:bg-gray-300'} ${darkMode ? 'text-white' : 'text-gray-800'} px-4 py-2 rounded-lg flex items-center space-x-2 focus:outline-none transition-colors duration-200`}>
-              <span className="font-normal text-sm">Hire me</span>
+              <Link href='/contact'>
+              <span className="font-bold text-sm">Hire Me</span>
+              </Link>
             </button>
           </div>
         </nav>

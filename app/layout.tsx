@@ -1,7 +1,8 @@
+import "./globals.css";
 import type { Metadata } from "next";
+import NavBar from "./components/Header";
 import { Montserrat } from "next/font/google";
 import { ReduxProvider } from "./Provider/provider";
-import "./globals.css";
 
 // Initialize the Montserrat font
 const montserrat = Montserrat({
@@ -21,8 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="antialiased flex flex-col items-center justify-center">
+      <body className="antialiased flex flex-col items-center justify-center pt-24">
         <ReduxProvider>
+          <NavBar />
           {children}
         </ReduxProvider>
       </body>
