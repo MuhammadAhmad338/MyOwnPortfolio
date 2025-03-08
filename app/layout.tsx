@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="antialiased flex flex-col items-center justify-center pt-24">
+      <body className="antialiased flex flex-col items-center justify-center pt-24 px-4 sm:px-6 md:px-8">
         <ReduxProvider>
           <NavBar />
           {children}

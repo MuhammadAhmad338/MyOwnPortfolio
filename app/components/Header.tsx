@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { FC } from 'react';
@@ -45,7 +45,6 @@ const NavBar: FC = () => {
               {/* Replace with your own icon */}
               <Link href='/project'>
                 <Image src={calendar} alt="Profile" width={24} height={24} />
-
               </Link>
             </button>
           </div>
