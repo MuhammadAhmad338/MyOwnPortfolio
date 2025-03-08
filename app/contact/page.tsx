@@ -16,8 +16,7 @@ const Contact = () => {
     useEffect(() => {
         setPrevDarkMode(darkMode);
     }, [darkMode]);
-
-
+   
     return (
         <div
             className={`
@@ -29,7 +28,7 @@ const Contact = () => {
           `}
             style={{
                 animationDuration: '500ms',
-                backgroundColor: darkMode ? '#2c2c2c' : 'white',    
+                backgroundColor: darkMode ? '#2c2c2c' : 'white',
             }}
         >
             <div className='flex flex-col space-y-6'>

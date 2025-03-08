@@ -1,7 +1,9 @@
 'use client'
 import Link from 'next/link';
-import React, { FC, useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useSelector } from 'react-redux';
+import man from '../../public/man.png';
+import React, { FC, useEffect, useState } from 'react';
 
 const Home: FC = () => {
     const darkMode = useSelector((state: any) => state.theme.darkMode);
@@ -52,9 +54,22 @@ const Home: FC = () => {
                             Product designer from Jakarta, ID. Currently designing at Rectangle.
                         </p>
                     </div>
-                    <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                        <div className="rounded-full overflow-hidden w-40 h-40 bg-black">
-                            {/* Add image or content here */}
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <div className="relative">
+                            {/* Circular progress indicator */}
+                            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-200 flex items-center justify-center bg-gray-100">
+                                <Image 
+                                    src={man} 
+                                    alt="Profile" 
+                                    width={140} 
+                                    height={140} 
+                                    className="rounded-full object-cover"
+                                />
+                            </div>
+                            {/* Skills indicator dots */}
+                            <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs">UI</div>
+                            <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">UX</div>
+                            <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs">3D</div>
                         </div>
                     </div>
                 </div>
