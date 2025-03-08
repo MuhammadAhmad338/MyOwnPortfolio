@@ -1,6 +1,6 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 
 :root {
   /* Light theme variables */
@@ -16,7 +16,7 @@
   /* Dark theme variables */
   --background: #161616;
   --foreground: #f9f9f9;
-  --front: #212121;
+  --front: #2c2c2c;
   --text-primary: #e1e1e1;
   --text-secondary: #a0a0a0;
   --accent: #3b82f6;

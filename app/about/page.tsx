@@ -7,24 +7,27 @@ const About: FC = () => {
     const darkMode = useSelector((state: any) => state.theme.darkMode);
     const [mounting, setMounting] = useState(true);
     const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
-    
+
     // Handle initial mount animation
     useEffect(() => {
         setMounting(false);
     }, []);
-    
+
     // Track dark mode changes to trigger animation
     useEffect(() => {
         setPrevDarkMode(darkMode);
     }, [darkMode]);
 
     return (
-        <div 
-            className={`${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-900'} 
+        <div
+            className={`
             px-2 rounded-xl transition-all duration-500 ease-in-out shadow-lg
             ${mounting ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}
-            ${prevDarkMode !== darkMode ? 'animate-slide-from-bottom' : ''}`} 
-            style={{ maxWidth: '578px', width: '100%', animationDuration: '500ms' }}
+            ${prevDarkMode !== darkMode ? 'animate-slide-from-bottom' : ''}`}
+            style={{
+                maxWidth: '578px', width: '100%', animationDuration: '500ms', 
+                backgroundColor: darkMode ? '#2c2c2c' : 'white',
+            }}
         >
             {/* Header with dot indicator */}
             <div className="flex items-center mb-6 p-6">

@@ -19,9 +19,9 @@ const NavBar: FC = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full ">
+    <div className="fixed top-0  left-0 right-0 z-50 flex justify-center w-full ">
       <div className="p-4" style={{ maxWidth: '608px', width: '100%' }}>
-        <nav className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} px-4 py-3 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`}>
+        <nav className={` px-4 py-3 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
           {/* Left side navigation icons */}
           <div className="flex space-x-8">
             {/* Home icon */}
