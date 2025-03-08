@@ -1,13 +1,37 @@
 'use client'
-
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 const Contact = () => {
-    const darkMode = useSelector((state: any) => state.theme.darkMode);
+     const darkMode = useSelector((state: any) => state.theme.darkMode);
+     const [mounting, setMounting] = useState(true);
+      const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
+      
+      // Handle initial mount animation
+      useEffect(() => {
+        setMounting(false);
+      }, []);
+      
+      // Track dark mode changes to trigger animation
+      useEffect(() => {
+        setPrevDarkMode(darkMode);
+      }, [darkMode]);
+    
 
     return (
-        <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} px-2 rounded-xl transition-colors duration-200 shadow-lg`} style={{ maxWidth: '578px', width: '100%' }}>
+        <div 
+        className={`
+            ${darkMode ? 'bg-zinc-800' : 'bg-white'} 
+            ${darkMode ? 'text-white' : 'text-gray-800'} 
+            px-2 py-2 rounded-2xl mx-auto w-full max-w-xl shadow-lg
+            transition-all duration-500 ease-in-out
+            ${mounting ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}
+            ${prevDarkMode !== darkMode ? 'animate-slide-from-bottom' : ''}
+          `}
+          style={{
+            animationDuration: '500ms',
+          }}
+        >
             <div className='flex flex-col space-y-6'>
                 {/* Header with status indicators */}
                 <div className='flex justify-between items-center p-4'>
