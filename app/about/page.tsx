@@ -25,7 +25,7 @@ const About: FC = () => {
             ${mounting ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}
             ${prevDarkMode !== darkMode ? 'animate-slide-from-bottom' : ''}`}
             style={{
-                maxWidth: '578px', width: '100%', animationDuration: '500ms', 
+                maxWidth: '578px', width: '100%', animationDuration: '500ms',
                 backgroundColor: darkMode ? '#2c2c2c' : 'white',
             }}
         >
@@ -37,10 +37,10 @@ const About: FC = () => {
 
             {/* Main content */}
             <div className="flex flex-col space-y-6 px-4 mb-8 pb-4">
-                <h1 className="text-4xl font-bold transition-all duration-500">It's Me Brian</h1>
+                <h1 className="text-4xl font-bold transition-all duration-500">It's Me Muhammad</h1>
 
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                    I'm Brian Do, a product designer with over 5 years of experience, currently residing in Jakarta, Indonesia. I have a deep passion for crafting purposeful interfaces and products. My main goal is to bridge the divide between people and technology, transforming intricate challenges into meaningful and seamless experiences.
+                    I'm Muhammad, a product designer with over 5 years of experience, currently residing in Jakarta, Indonesia. I have a deep passion for crafting purposeful interfaces and products. My main goal is to bridge the divide between people and technology, transforming intricate challenges into meaningful and seamless experiences.
                 </p>
             </div>
 

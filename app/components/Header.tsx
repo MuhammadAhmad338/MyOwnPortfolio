@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, { FC } from 'react';
 import home from '../../public/home.png';
-import user from '../../public/user.png';
+import profile from '../../public/profile.png';
 import lightmode from '../../public/lightmode.png';
 import darkmode from '../../public/darkmode.png';
 import calendar from '../../public/calendar.png';
@@ -36,7 +36,7 @@ const NavBar: FC = () => {
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
               <Link href='/about'>
-                <Image src={user} alt="Profile" width={24} height={24} />
+                <Image src={profile} alt="Profile" width={20} height={20} />
               </Link>
             </button>
 
@@ -44,7 +44,7 @@ const NavBar: FC = () => {
             <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
               {/* Replace with your own icon */}
               <Link href='/project'>
-                <Image src={calendar} alt="Profile" width={24} height={24} />
+                <Image src={calendar} alt="Profile" width={20} height={20} />
               </Link>
             </button>
           </div>

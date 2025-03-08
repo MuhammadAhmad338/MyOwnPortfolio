@@ -38,10 +38,12 @@ const Contact = () => {
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
                         <span className="text-lg font-medium">Hire Me</span>
                     </div>
-                    <div className="bg-green-100 px-4 py-1 rounded-full flex items-center">
+            
+                    <div className="bg-green-800 px-4 py-1 rounded-full flex items-center">
                         <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                        <span className="text-xs font-medium text-green-700">AVAILABLE FOR WORK</span>
+                        <span className="text-xs font-bold text-green-200">AVAILABLE FOR WORK</span>
                     </div>
+        
                 </div>
 
                 {/* Main title */}
