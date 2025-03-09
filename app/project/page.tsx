@@ -56,7 +56,6 @@ const Projects = () => {
 
             <div className={`${darkMode ? 'bg-zinc-900' : 'bg-gray-100'} p-4 mt-4 rounded-xl ${darkMode ? 'text-white' : 'text-gray-800'} transition-colors duration-200`}>
 
-
                 {/* Morva Labs Card */}
                 <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200`}>
                     <div className="flex items-center">
@@ -151,7 +150,7 @@ const Projects = () => {
             {/* Let's work together section */}
             <div className='mt-14 justify-center flex flex-col items-center'>
                 <h2 className="text-3xl font-bold mb-2">Let's work together.</h2>
-                <p className="text-md mb-6">Creating user experience and visual appealing design</p>
+                <p className="text-md mb-6 text-center sm:text-center">Creating user experience and visual appealing design</p>
 
                 <div className="flex flex-row justify-center space-x-4">
                     <Link href={'/contact'}>

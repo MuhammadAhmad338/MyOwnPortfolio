@@ -68,12 +68,17 @@ const About: FC = () => {
                 </p>
             </div>
 
+            
+            {/* Side Projects */}
+            <div>
+
+            </div>
 
 
             {/* Let's work together section */}
             <div className='mt-14 justify-center flex flex-col items-center'>
                 <h2 className="text-3xl font-bold mb-2 transition-all duration-500">Let's work together.</h2>
-                <p className="text-md mb-6">Creating user experience and visual appealing design</p>
+                <p className="text-md mb-6 text-center sm:text-center">Creating user experience and visual appealing design</p>
 
                 <div className="flex flex-row justify-center space-x-4">
                     <Link href={'/contact'}>

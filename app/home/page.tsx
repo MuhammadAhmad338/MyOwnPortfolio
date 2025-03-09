@@ -49,8 +49,8 @@ const Home: FC = () => {
 
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6">
                     <div className="w-full md:w-1/2 mb-4 md:mb-0">
-                        <h2 className="text-2xl font-bold mb-4">I AM MUHAMMAD</h2>
-                        <p className="text-md">
+                        <h2 className="text-2xl font-bold mb-4 text-center sm:text-center">I AM MUHAMMAD</h2>
+                        <p className="text-md text-center sm:text-center">
                             Product designer from Jakarta, ID. Currently designing at Rectangle.
                         </p>
                     </div>
@@ -73,7 +73,8 @@ const Home: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex space-x-4">
+
+                <div className="flex justify-center lg:justify-start space-x-4">
                     <Link href='/contact'>
                         <button className={`${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} px-3 py-1.5 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-sm`}>
                             <div className="mr-1.5 w-1.5 h-1.5 flex items-center justify-center border border-gray-400 rounded-full">
@@ -98,6 +99,7 @@ const Home: FC = () => {
                         <span>Copy Email</span>
                     </button>
                 </div>
+
             </div>
 
             <div className={`${darkMode ? 'bg-zinc-900' : 'bg-gray-100'} p-4 mt-4 rounded-xl ${darkMode ? 'text-white' : 'text-gray-800'} transition-colors duration-200`}>
@@ -245,7 +247,7 @@ const Home: FC = () => {
             {/* Let's work together section */}
             <div className='mt-14 justify-center flex flex-col items-center'>
                 <h2 className="text-3xl font-bold mb-2">Let's work together.</h2>
-                <p className="text-md mb-6">Creating user experience and visual appealing design</p>
+                <p className="text-md mb-6 text-center sm:text-center">Creating user experience and visual appealing design</p>
 
                 <div className="flex flex-row justify-center space-x-4">
                     <Link href={'/contact'}>
