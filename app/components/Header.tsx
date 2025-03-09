@@ -19,34 +19,31 @@ const NavBar: FC = () => {
   };
 
   return (
-    <div className="fixed top-0  left-0 right-0 z-50 flex justify-center w-full ">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full ">
       <div className="p-4" style={{ maxWidth: '608px', width: '100%' }}>
-        <nav className={` px-4 py-3 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
+        <nav className={`px-2 py-2 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
           {/* Left side navigation icons */}
           <div className="flex space-x-8">
             {/* Home icon */}
-            <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
-              {/* Replace with your own icon */}
-              <Link href={"/home"}>
-                <Image src={home} alt="Profile" width={24} height={24} />
-              </Link>
-            </button>
+            <Link href="/home">
+              <button className={`p-2 rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}>
+              <Image src={home} alt="Home" width={24} height={24} />
+              </button>
+            </Link>
 
             {/* Profile icon */}
-            <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
-              {/* Replace with your own icon */}
-              <Link href='/about'>
-                <Image src={profile} alt="Profile" width={20} height={20} />
-              </Link>
-            </button>
+            <Link href='/about'>
+              <button className={`p-2 rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}>
+              <Image src={profile} alt="Profile" width={20} height={20} />
+              </button>
+            </Link>
 
             {/* Calendar icon */}
-            <button className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}>
-              {/* Replace with your own icon */}
-              <Link href='/project'>
-                <Image src={calendar} alt="Profile" width={20} height={20} />
-              </Link>
-            </button>
+            <Link href='/project'>
+              <button className={`p-2 rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}>
+              <Image src={calendar} alt="Calendar" width={20} height={20} />
+              </button>
+            </Link>
           </div>
 
           {/* Right side with theme toggle and CTA button */}

@@ -1,11 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import NavBar from "./components/Header";
-import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ReduxProvider } from "./Provider/provider";
 
-// Initialize the Montserrat font
-const montserrat = Montserrat({
+// Initialize the Poppins font
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400"], // Add multiple weights as needed
 });
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={montserrat.className}>
-      <body className="antialiased flex flex-col items-center justify-center pt-24 px-4 sm:px-6 md:px-8">
+    <html lang="en" className={poppins.className}>
+      <body className="antialiased flex flex-col items-center justify-center pt-20 px-4 sm:px-4 md:px-4">
         <ReduxProvider>
           <NavBar />
           {children}

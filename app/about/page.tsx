@@ -1,5 +1,7 @@
 "use client"
 import Link from 'next/link';
+import Image from 'next/image';
+import women from '../../public/women.jpg';
 import React, { FC, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -38,10 +40,20 @@ const About: FC = () => {
             {/* Main content */}
             <div className="flex flex-col space-y-6 px-4 mb-8 pb-4">
                 <h1 className="text-4xl font-bold transition-all duration-500">It's Me Muhammad</h1>
-
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
                     I'm Muhammad, a product designer with over 5 years of experience, currently residing in Jakarta, Indonesia. I have a deep passion for crafting purposeful interfaces and products. My main goal is to bridge the divide between people and technology, transforming intricate challenges into meaningful and seamless experiences.
                 </p>
+            </div>
+
+            <div className="flex flex-col space-y-6 px-4 m-4 sm:m-8 pb-4 rounded-lg bg-gray-200 p-4 shadow-md">
+                <div className="rounded-lg overflow-hidden w-full h-[300px] sm:h-[400px] md:h-[470px] bg-white relative">
+                    <Image 
+                        src={women} 
+                        alt='Woman portrait'  
+                        fill
+                        className="object-cover"
+                    />
+                </div>
             </div>
 
             <div className="space-y-6 px-4 mb-8 pb-4">
@@ -55,6 +67,8 @@ const About: FC = () => {
                     When he's not immersed in design work, he finds solace in playing the guitar and exploring new coffee shops in his local area. Brian firmly believes in maintaining a healthy work-life balance, making sure to take breaks and reenergize his creativity. In his spare time, he also volunteers at a local animal shelter on weekends.
                 </p>
             </div>
+
+
 
             {/* Let's work together section */}
             <div className='mt-14 justify-center flex flex-col items-center'>
