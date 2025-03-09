@@ -39,7 +39,7 @@ const Home: FC = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6">
                     <div className="flex items-center mb-4 md:mb-0">
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
-                        <span className="text-lg font-bold">Product Designer</span>
+                        <span className="text-lg font-bold">Software Engineer</span>
                     </div>
                     <div className="bg-green-800 px-4 py-1 rounded-full flex items-center">
                         <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
@@ -117,7 +117,7 @@ const Home: FC = () => {
                 </div>
 
                 {/* Morva Labs Card */}
-                <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200`}>
+                <div className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
                     <div className="flex items-center">
                         <div className="bg-indigo-900 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
                             M
@@ -135,7 +135,7 @@ const Home: FC = () => {
                 </div>
 
                 {/* Rectangle Card */}
-                <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 mb-3 flex items-center justify-between transition-colors duration-200`}>
+                <div className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
                     <div className="flex items-center">
                         <div className="bg-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
                             <div className="w-5 h-5 bg-white rounded-sm"></div>
@@ -153,7 +153,7 @@ const Home: FC = () => {
                 </div>
 
                 {/* Simply Card */}
-                <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 flex items-center justify-between transition-colors duration-200`}>
+                <div className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
                     <div className="flex items-center">
                         <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -188,7 +188,8 @@ const Home: FC = () => {
                 </div>
 
                 {/* Morva Labs Card */}
-                <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 mb-3 flex items-center justify-between transition-colors duration-200`}>
+                <div className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
+
                     <div className="flex items-center">
                         <div className="bg-indigo-900 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
                             M
@@ -206,7 +207,8 @@ const Home: FC = () => {
                 </div>
 
                 {/* Rectangle Card */}
-                <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 mb-3 flex items-center justify-between transition-colors duration-200`}>
+                <div className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
+
                     <div className="flex items-center">
                         <div className="bg-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
                             <div className="w-5 h-5 bg-white rounded-sm"></div>
@@ -224,7 +226,8 @@ const Home: FC = () => {
                 </div>
 
                 {/* Simply Card */}
-                <div className={`${darkMode ? 'bg-zinc-800' : 'bg-white'} rounded-xl p-6 flex items-center justify-between transition-colors duration-200`}>
+                <div className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
+
                     <div className="flex items-center">
                         <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
