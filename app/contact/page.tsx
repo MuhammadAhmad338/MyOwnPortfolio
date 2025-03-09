@@ -7,6 +7,27 @@ const Contact = () => {
     const [mounting, setMounting] = useState(true);
     const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
 
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e: any) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        const { name, email, message } = formData;
+        const mailtoLink = `mailto:ahmadmuhammad.7700@gmail.com?subject=${encodeURIComponent(message)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)}`;
+        window.location.href = mailtoLink;
+        console.log(mailtoLink);
+    };
+
     // Handle initial mount animation
     useEffect(() => {
         setMounting(false);
@@ -16,7 +37,7 @@ const Contact = () => {
     useEffect(() => {
         setPrevDarkMode(darkMode);
     }, [darkMode]);
-   
+
     return (
         <div
             className={`
@@ -38,12 +59,12 @@ const Contact = () => {
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
                         <span className="text-lg font-medium">Hire Me</span>
                     </div>
-            
+
                     <div className="bg-green-800 px-4 py-1 rounded-full flex items-center">
                         <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
                         <span className="text-xs font-bold text-green-200">AVAILABLE FOR WORK</span>
                     </div>
-        
+
                 </div>
 
                 {/* Main title */}
@@ -57,21 +78,30 @@ const Contact = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <input
                             type="text"
-                            placeholder="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder='name'
                             className={`py-2 px-2 rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
                         />
                         <input
                             type="email"
                             placeholder="email address"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
                             className={`py-2 px-2 rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
                         />
                     </div>
                     <textarea
                         placeholder="message"
                         rows={6}
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         className={`w-full py-2 px-2 rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
                     />
-                    <button className="w-full py-3 bg-black font-bold text-white rounded-lg">
+                    <button className="w-full py-3 bg-black font-bold text-white rounded-lg" onClick={handleSubmit}>
                         Submit
                     </button>
                 </div>
