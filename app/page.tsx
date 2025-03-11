@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import man from '../public/man.png';
+import ahmad from '../public/ahmad.jpg';
 import { useSelector } from 'react-redux';
 import React, { FC, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -54,9 +54,9 @@ const Home: FC = () => {
 
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6">
                     <div className="w-full md:w-1/2 mb-4 md:mb-0">
-                        <h2 className="text-2xl font-bold mb-4 text-center sm:text-center">I AM MUHAMMAD</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-center sm:text-center">I AM AHMAD</h2>
                         <p className="text-md text-center sm:text-center">
-                            Product designer from Jakarta, ID. Currently designing at Rectangle.
+                        Software engineer from Faisalabad, PK. Currently developing applications.
                         </p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center">
@@ -64,7 +64,7 @@ const Home: FC = () => {
                             {/* Circular progress indicator */}
                             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-200 flex items-center justify-center bg-gray-100">
                                 <Image 
-                                    src={man} 
+                                    src={ahmad} 
                                     alt="Profile" 
                                     width={140} 
                                     height={140} 

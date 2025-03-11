@@ -1,21 +1,36 @@
 'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { FC } from 'react';
 import home from '../../public/home.png';
+import React, { FC, useState } from 'react';
 import profile from '../../public/profile.png';
-import lightmode from '../../public/lightmode.png';
 import darkmode from '../../public/darkmode.png';
 import calendar from '../../public/calendar.png';
+import lightmode from '../../public/lightmode.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 const NavBar: FC = () => {
   const darkMode = useSelector((state: any) => state.theme.darkMode);
+  const [isDownloading, setIsDownloading] = useState(false);
   const dispatch = useDispatch();
 
   const handleToggleTheme = () => {
     dispatch(toggleDarkMode());
+  };
+
+  const handleDownloadCV = () => {
+    setIsDownloading(true);
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = '/ahmad_resume.pdf'; // Place your CV in the public folder with this name
+    link.download = 'ahmad_resume.pdf';
+    // Append to body, click and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setIsDownloading(false);
   };
 
   return (
@@ -27,21 +42,21 @@ const NavBar: FC = () => {
             {/* Home icon */}
             <Link href="/">
               <button className={`p-2 rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}>
-              <Image src={home} alt="Home" width={24} height={24} />
+                <Image src={home} alt="Home" width={24} height={24} />
               </button>
             </Link>
 
             {/* Profile icon */}
             <Link href='/about'>
               <button className={`p-2 rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}>
-              <Image src={profile} alt="Profile" width={20} height={20} />
+                <Image src={profile} alt="Profile" width={20} height={20} />
               </button>
             </Link>
 
             {/* Calendar icon */}
             <Link href='/projects'>
               <button className={`p-2 rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}>
-              <Image src={calendar} alt="Calendar" width={20} height={20} />
+                <Image src={calendar} alt="Calendar" width={20} height={20} />
               </button>
             </Link>
           </div>
@@ -61,11 +76,9 @@ const NavBar: FC = () => {
             </button>
 
             {/* Hire Me button */}
-            <Link href='/contact'>
-              <button className={`${darkMode ? 'bg-zinc-700 hover:bg-zinc-600' : 'bg-gray-200 hover:bg-gray-300'} ${darkMode ? 'text-white' : 'text-gray-800'} px-4 py-2 rounded-lg flex items-center space-x-2 focus:outline-none transition-colors duration-200`}>
-                <span className="font-bold text-sm">Hire Me</span>
-              </button>
-            </Link>
+            <button onClick={handleDownloadCV} disabled={isDownloading} className={`${darkMode ? 'bg-zinc-700 hover:bg-zinc-600' : 'bg-gray-200 hover:bg-gray-300'} ${darkMode ? 'text-white' : 'text-gray-800'} px-4 py-2 rounded-lg flex items-center space-x-2 focus:outline-none transition-colors duration-200`}>
+              <span className="font-bold text-sm">{isDownloading ? 'Downloading...' : 'RESUME'}</span>
+            </button>
 
           </div>
         </nav>

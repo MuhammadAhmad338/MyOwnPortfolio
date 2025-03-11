@@ -44,7 +44,7 @@ const About: FC = () => {
             <div className="flex flex-col space-y-6 px-4 mb-8 pb-4">
                 <h1 className="text-4xl font-bold transition-all duration-500">It's Me Muhammad</h1>
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                    I'm Muhammad, a product designer with over 5 years of experience, currently residing in Jakarta, Indonesia. I have a deep passion for crafting purposeful interfaces and products. My main goal is to bridge the divide between people and technology, transforming intricate challenges into meaningful and seamless experiences.
+                I'm Ahmad, a Software Engineer with over 5 years of experience, currently residing in Faisalabad, Pakistan. I have a deep passion for building scalable applications using Flutter and React. My main goal is to bridge the gap between people and technology, transforming complex challenges into seamless and meaningful digital experiences.
                 </p>
             </div>
 
@@ -63,11 +63,11 @@ const About: FC = () => {
                 <h2 className="text-3xl font-bold transition-all duration-500">More About Me</h2>
 
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                    Brian Do holds a bachelor's degree in Graphic Design from a prestigious university in the United States and has a relentless drive for staying up-to-date with the latest technologies and design trends. Actively involved in the design community, Brian regularly participates in diverse design conferences and meetups.
+                I hold a bachelor's degree in Software Engineering from Riphah International University and have a strong passion for staying up-to-date with the latest technologies and development trends. With expertise in Flutter and React, I specialize in building modern, scalable applications that enhance user experiences.
                 </p>
 
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                    When he's not immersed in design work, he finds solace in playing the guitar and exploring new coffee shops in his local area. Brian firmly believes in maintaining a healthy work-life balance, making sure to take breaks and reenergize his creativity. In his spare time, he also volunteers at a local animal shelter on weekends.
+                Beyond coding, I enjoy exploring new technologies, contributing to open-source projects, and engaging with the developer community. I believe in maintaining a healthy work-life balance, ensuring time for continuous learning and personal growth.
                 </p>
             </div>
 
