@@ -25,7 +25,6 @@ const NavBar: FC = () => {
     const link = document.createElement('a');
     link.href = '/ahmad_resume.pdf'; // Place your CV in the public folder with this name
     link.download = 'ahmad_resume.pdf';
-    // Append to body, click and remove
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
