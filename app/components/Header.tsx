@@ -46,9 +46,9 @@ const NavBar: FC = () => {
       ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
       focus:outline-none`}
                 >
-                  <Image src={home} alt="Home" width={28} height={28} />
+                  <Image src={home} alt="Home" width={26} height={26} />
                 </button>
-                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   home
                 </div>
               </div>
@@ -62,9 +62,9 @@ const NavBar: FC = () => {
       ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
       focus:outline-none`}
                 >
-                  <Image src={profile} alt="Home" width={24} height={24} />
+                  <Image src={profile} alt="Home" width={22} height={22} />
                 </button>
-                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   about
                 </div>
               </div>
@@ -78,9 +78,9 @@ const NavBar: FC = () => {
       ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
       focus:outline-none`}
                 >
-                  <Image src={calendar} alt="Home" width={24} height={24} />
+                  <Image src={calendar} alt="Home" width={22} height={22} />
                 </button>
-                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   projects
                 </div>
               </div>
