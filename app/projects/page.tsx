@@ -1,9 +1,8 @@
 'use client'
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import Links from '../components/Links';
 import { useSelector } from 'react-redux';
 import Footer from '../components/Footer';
-import Links from '../components/Links';
+import React, { useEffect, useState } from 'react';
 import Worktogether from '../components/Worktogether';
 
 const Projects = () => {

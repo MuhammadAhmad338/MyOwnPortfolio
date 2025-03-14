@@ -109,7 +109,6 @@ const Contact = () => {
                 </div>
             </div>
 
-            {/* Social Media Links Section */}
             <Links />
             <Footer />
         </div>

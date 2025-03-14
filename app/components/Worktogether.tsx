@@ -3,7 +3,9 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 
 const Worktogether = () => {
+    
     const darkMode = useSelector((state: any) => state.theme.darkMode);
+
     return (
         <div className='mt-14 justify-center flex flex-col items-center'>
             <h2 className="text-3xl font-bold mb-2">Let's work together.</h2>

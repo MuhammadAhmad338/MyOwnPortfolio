@@ -1,12 +1,11 @@
 "use client"
-import Link from 'next/link';
 import Image from 'next/image';
-import women from '../../public/women.jpg';
-import React, { FC, useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import Worktogether from '../components/Worktogether';
 import Links from '../components/Links';
+import { useSelector } from 'react-redux';
 import Footer from '../components/Footer';
+import women from '../../public/women.jpg';
+import Worktogether from '../components/Worktogether';
+import React, { FC, useEffect, useState } from 'react';
 
 const About: FC = () => {
     const darkMode = useSelector((state: any) => state.theme.darkMode);
@@ -48,7 +47,7 @@ const About: FC = () => {
                 </p>
             </div>
 
-            <div className="flex flex-col space-y-6 px-4 m-4 sm:m-8 pb-4 rounded-lg bg-gray-200 p-4 shadow-md">
+            <div className="flex flex-col space-y-6 px-4 m-2 sm:m-6 pb-4 rounded-lg bg-gray-200 p-4 shadow-md">
                 <div className="rounded-lg overflow-hidden w-full h-[300px] sm:h-[400px] md:h-[470px] bg-white relative">
                     <Image
                         src={women}
