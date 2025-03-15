@@ -10,17 +10,17 @@ import Worktogether from './components/Worktogether';
 import React, { FC, useEffect, useState } from 'react';
 
 const Home: FC = () => {
+    
     const darkMode = useSelector((state: any) => state.theme.darkMode);
     const [mounting, setMounting] = useState(true);
     const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
+
     const router = useRouter();
 
-    // Handle initial mount animation
     useEffect(() => {
         setMounting(false);
     }, []);
 
-    // Track dark mode changes to trigger animation
     useEffect(() => {
         setPrevDarkMode(darkMode);
     }, [darkMode]);
@@ -41,6 +41,7 @@ const Home: FC = () => {
         >
             {/* Header Section */}
             <div className='m-4'>
+
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6">
                     <div className="flex items-center mb-4 md:mb-0">
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
@@ -146,8 +147,8 @@ const Home: FC = () => {
                             <div className="w-5 h-5 bg-white rounded-sm"></div>
                         </div>
                         <div>
-                            <div className="font-medium text-lg">Rectangle</div>
-                            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>Product design, Icon design</div>
+                            <div className="font-medium text-lg">Pixel Count</div>
+                            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>App Design, and development</div>
                         </div>
                     </div>
                     <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
@@ -176,6 +177,7 @@ const Home: FC = () => {
                         </svg>
                     </div>
                 </div>
+
             </div>
 
             <div className={`${darkMode ? 'bg-zinc-900' : 'bg-gray-100'} p-6 mt-4 rounded-xl ${darkMode ? 'text-white' : 'text-gray-800'} transition-colors duration-200`}>
@@ -218,8 +220,8 @@ const Home: FC = () => {
                             <div className="w-5 h-5 bg-white rounded-sm"></div>
                         </div>
                         <div>
-                            <div className="font-medium text-lg">Rectangle</div>
-                            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>Product design, Icon design</div>
+                            <div className="font-medium text-lg">Pixel Count</div>
+                            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>App Design, and development</div>
                         </div>
                     </div>
                     <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
