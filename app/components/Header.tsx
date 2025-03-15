@@ -34,8 +34,8 @@ const NavBar: FC = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full ">
-      <div className="p-4" style={{ maxWidth: '608px', width: '100%' }}>
-        <nav className={`px-2 py-3 shadow-lg rounded-xl flex justify-between items-center w-full transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
+      <div className="px-2 sm:px-4 pt-2" style={{ maxWidth: '608px', width: '100%' }}>
+        <nav className={`px-2 py-2 shadow-lg rounded-xl flex justify-between items-center transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
           {/* Left side navigation icons */}
           <div className="flex space-x-4">
             {/* Home icon */}
@@ -48,7 +48,7 @@ const NavBar: FC = () => {
                 >
                   <Image src={home} alt="Home" width={26} height={26} />
                 </button>
-                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   home
                 </div>
               </div>
@@ -64,7 +64,7 @@ const NavBar: FC = () => {
                 >
                   <Image src={profile} alt="Home" width={22} height={22} />
                 </button>
-                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   about
                 </div>
               </div>
@@ -80,7 +80,7 @@ const NavBar: FC = () => {
                 >
                   <Image src={calendar} alt="Home" width={22} height={22} />
                 </button>
-                <div className={`absolute bottom-full mb-0 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   projects
                 </div>
               </div>

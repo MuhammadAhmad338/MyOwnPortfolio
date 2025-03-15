@@ -30,7 +30,7 @@ const Home: FC = () => {
             className={`
             ${darkMode ? 'text-white' : 'text-gray-800'} 
             px-2 py-2 rounded-2xl mx-auto w-full max-w-xl shadow-lg
-            transition-all duration-500 ease-in-out
+            transition-all duration-500 ease-in-out 
             ${mounting ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}
             ${prevDarkMode !== darkMode ? 'animate-slide-from-bottom' : ''}
           `}
@@ -181,6 +181,7 @@ const Home: FC = () => {
             </div>
 
             <div className={`${darkMode ? 'bg-zinc-900' : 'bg-gray-100'} p-6 mt-4 rounded-xl ${darkMode ? 'text-white' : 'text-gray-800'} transition-colors duration-200`}>
+
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center">
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
