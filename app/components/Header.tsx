@@ -1,11 +1,10 @@
 'use client'
 import Link from 'next/link';
 import Image from 'next/image';
+import bag from '../../public/bag.png';
 import home from '../../public/home.png';
 import React, { FC, useState } from 'react';
-import profile from '../../public/profile.png';
 import darkmode from '../../public/darkmode.png';
-import bag from '../../public/bag.png';
 import lightmode from '../../public/lightmode.png';
 import userprofile from '../../public/userprofile.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
@@ -35,7 +34,7 @@ const NavBar: FC = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full ">
-      <div className="px-4 sm:px-4 pt-2" style={{ maxWidth: '608px', width: '100%' }}>
+      <div className="px-2 sm:px-4 pt-3" style={{ maxWidth: '608px', width: '100%' }}>
         <nav className={`px-2 py-2 shadow-lg rounded-xl flex justify-between items-center transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
           {/* Left side navigation icons */}
           <div className="flex space-x-4">
@@ -49,7 +48,7 @@ const NavBar: FC = () => {
                 >
                   <Image src={home} alt="Home" width={26} height={26} />
                 </button>
-                <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-2 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   home
                 </div>
               </div>
@@ -63,7 +62,7 @@ const NavBar: FC = () => {
       ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
       focus:outline-none`}
                 >
-                  <Image src={userprofile} alt="Home" width={22} height={22} />
+                  <Image src={userprofile} alt="Home" width={26} height={26} />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   about

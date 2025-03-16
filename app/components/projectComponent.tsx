@@ -50,20 +50,12 @@ const ProjectComponent: FC<{
             <div className={`${darkMode ? 'bg-zinc-800' : 'bg-slate-100'} flex items-center mb-6 p-6 rounded-xl`}>
                 <div className='flex flex-col w-full space-y-3'>
                     <div className='grid grid-cols-2 gap-4'>
-                        <span className='text-sm w-24'>Client</span>
-                        <span className='text-sm flex-1'>John Doe</span>
-                    </div>
-                    <div className='grid grid-cols-2 gap-4'>
-                        <span className='text-sm w-24'>Company</span>
-                        <span className='text-sm flex-1'>Rectangle</span>
-                    </div>
-                    <div className='grid grid-cols-2 gap-4'>
                         <span className='text-sm w-24'>Project Type</span>
-                        <span className='text-sm flex-1'>Project Development</span>
+                        <span className='text-sm flex-1'>{title}</span>
                     </div>
                     <div className='grid grid-cols-2 gap-4'>
                         <span className='text-sm w-24'>Year</span>
-                        <span className='text-sm flex-1'>2025</span>
+                        <span className='text-sm flex-1'>2024</span>
                     </div>
                 </div>
             </div>

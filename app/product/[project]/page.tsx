@@ -27,19 +27,18 @@ const Project = () => {
         },
       ],
     },
-    morva: {
-      title: "Morva Labs",
-      description: "Visual design and branding solutions for modern businesses.",
-      articledata: [
+    pranksounds: {
+      "title": "Prank Sounds App",
+      "description": "A fun and entertaining app filled with high-quality prank sounds.",
+      "articledata": [
         {
-          imgsrc: "",
-          desc: "Morva Labs is a comprehensive branding solution focused on creating distinctive visual identities for growing businesses.",
-          title: "Morva Labs",
-          imgsrc1: "/morva.png",
-          solution:
-            "We developed a complete brand identity system including logos, color palettes, typography guidelines, and visual assets that communicate the client's unique value proposition.",
-        },
-      ],
+          "imgsrc": "",
+          "desc": "Prank Sounds App is designed to add laughter and surprise with a variety of hilarious sound effects.",
+          "title": "Prank Sounds App",
+          "imgsrc1": "/pranksounds.png",
+          "solution": "We developed a playful and engaging app with an intuitive interface, categorized sound effects, and high-quality audio to ensure the best prank experience for users."
+        }
+      ]
     },
     simply: {
       title: "Simply",
