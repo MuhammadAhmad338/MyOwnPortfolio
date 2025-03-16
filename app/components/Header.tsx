@@ -5,7 +5,7 @@ import home from '../../public/home.png';
 import React, { FC, useState } from 'react';
 import profile from '../../public/profile.png';
 import darkmode from '../../public/darkmode.png';
-import calendar from '../../public/calendar.png';
+import bag from '../../public/bag.png';
 import lightmode from '../../public/lightmode.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
 import { useSelector, useDispatch } from 'react-redux';
@@ -78,7 +78,7 @@ const NavBar: FC = () => {
       ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
       focus:outline-none`}
                 >
-                  <Image src={calendar} alt="Home" width={22} height={22} />
+                  <Image src={bag} alt="Home" width={26} height={26} />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   projects
