@@ -7,6 +7,7 @@ import profile from '../../public/profile.png';
 import darkmode from '../../public/darkmode.png';
 import bag from '../../public/bag.png';
 import lightmode from '../../public/lightmode.png';
+import userprofile from '../../public/userprofile.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -62,7 +63,7 @@ const NavBar: FC = () => {
       ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
       focus:outline-none`}
                 >
-                  <Image src={profile} alt="Home" width={22} height={22} />
+                  <Image src={userprofile} alt="Home" width={22} height={22} />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   about
