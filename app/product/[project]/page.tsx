@@ -4,16 +4,15 @@ import { useParams } from "next/navigation";
 import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
-  // Get the parameter from the URL
   const params = useParams();
-  const projectParam = params?.project; // Ensure it's accessed safely
+  const projectParam = params?.project;
 
   console.log("Project parameter:", projectParam);
 
   // Create a mapping object for your projects
   const projectData: Record<string, any> = {
     pixelcount: {
-      title: "Pixel Count",
+      title: "Pixel Count App",
       description:
         "A mobile application for Android and iOS that processes and analyzes images, providing detailed pixel-level information and statistics.",
       articledata: [
@@ -28,7 +27,7 @@ const Project = () => {
       ],
     },
     pranksounds: {
-      "title": "Prank Sounds App",
+      "title": "Prank Sound App",
       "description": "A fun and entertaining app filled with high-quality prank sounds.",
       "articledata": [
         {
@@ -40,17 +39,16 @@ const Project = () => {
         }
       ]
     },
-    simply: {
-      title: "Simply",
-      description: "Landing page and illustration design for digital products.",
+    octavpn: { 
+      title: "Octa VPN App",
+      description: "A secure and user-friendly VPN service for enhanced online privacy.",
       articledata: [
         {
           imgsrc: "",
-          desc: "Simply provides clean, effective landing pages with custom illustrations designed to maximize conversion rates.",
-          title: "Simply",
-          imgsrc1: "/simply.png",
-          solution:
-            "We created a flexible landing page template system with custom illustrations that effectively communicates product benefits while maintaining high performance and accessibility standards.",
+          desc: "Octa VPN provides users with a fast and reliable VPN service, ensuring their online activities are private and secure.  We focused on creating a user-friendly experience with a clean interface.",
+          title: "Octa VPN",
+          imgsrc1: "/octavpn.png", 
+          solution: "We developed a cross-platform VPN application with strong encryption and a global server network.  The design emphasizes ease of use and a seamless connection process.",
         },
       ],
     },

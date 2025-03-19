@@ -157,7 +157,7 @@ const Home: FC = () => {
                 </div>
 
                 {/* Simply Card */}
-                <div onClick={() => router.push("/product/simply")} className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
+                <div onClick={() => router.push("/product/octavpn")} className={`${darkMode ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-white hover:bg-gray-200'} rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 hover:shadow-lg`}>
                     <div className="flex items-center">
                         <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -165,8 +165,8 @@ const Home: FC = () => {
                             </svg>
                         </div>
                         <div>
-                            <div className="font-medium text-lg">Simply</div>
-                            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>Landing page, Illustration design</div>
+                            <div className="font-medium text-lg">Octa VPN</div>
+                            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>Application Development, Application design</div>
                         </div>
                     </div>
                     <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>

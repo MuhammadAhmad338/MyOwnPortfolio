@@ -17,7 +17,7 @@ const ProjectComponent: FC<{
         imgsrc1?: string,
         solution?: string,
     }[]
-}> = ({ title, description, articledata, }) => {
+}> = ({ title, description, articledata }) => {
 
     const darkMode = useSelector((state: any) => state.theme.darkMode);
     const [mounting, setMounting] = useState(true);
