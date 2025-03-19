@@ -62,17 +62,19 @@ const Contact = () => {
                         <span className="text-lg font-medium">Hire Me</span>
                     </div>
 
-                    <div className="bg-green-800 px-4 py-1 rounded-full flex items-center">
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                        <span className="text-xs font-bold text-green-200">AVAILABLE FOR WORK</span>
+                    <div className="flex justify-center items-center h-full">
+                        <div className="bg-green-800 px-2 py-2 rounded-full flex items-center justify-center w-fit">
+                            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        </div>
                     </div>
+
 
                 </div>
 
                 {/* Main title */}
                 <div className='px-4 py-2'>
-                    <h1 className="text-4xl font-bold">Design Inquiry</h1>
-                    <p className="text-gray-500 mt-2">Got an idea and need design help? Reach out now</p>
+                    <h1 className="text-4xl font-bold">Your Inquiry</h1>
+                    <p className="text-gray-500 text-md mt-2">Got an idea and need development and design help? Reach out now</p>
                 </div>
 
                 {/* Form */}

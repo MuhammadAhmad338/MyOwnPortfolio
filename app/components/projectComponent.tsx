@@ -86,11 +86,9 @@ const ProjectComponent: FC<{
                     </div>
                 ))
             }
-
             <Worktogether />
             <Links />
             <Footer />
-
         </div>
     )
 }
