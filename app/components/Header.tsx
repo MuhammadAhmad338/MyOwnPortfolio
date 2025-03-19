@@ -6,9 +6,11 @@ import home from '../../public/home.png';
 import React, { FC, useState } from 'react';
 import darkmode from '../../public/darkmode.png';
 import lightmode from '../../public/lightmode.png';
-import userprofile from '../../public/userprofile.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'
+import userprofile from '../../public/userprofile.png';
+import customer from '../../public/review-customer.png';
+
 
 const NavBar: FC = () => {
   const darkMode = useSelector((state: any) => state.theme.darkMode);
@@ -59,8 +61,8 @@ const NavBar: FC = () => {
               <div className="relative group">
                 <button
                   className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 
-      ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
-      focus:outline-none`}
+                  ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
+                   focus:outline-none`}
                 >
                   <Image src={userprofile} alt="Home" width={26} height={26} />
                 </button>
@@ -75,13 +77,29 @@ const NavBar: FC = () => {
               <div className="relative group">
                 <button
                   className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 
-      ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
-      focus:outline-none`}
+                   ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
+                  focus:outline-none`}
                 >
                   <Image src={bag} alt="Home" width={26} height={26} />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   projects
+                </div>
+              </div>
+            </Link>
+
+            {/* Calendar icon */}
+            <Link href="/skills">
+              <div className="relative group">
+                <button
+                  className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 
+                ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
+               focus:outline-none`}
+                >
+                  <Image src={customer} alt="Home" width={26} height={26} />
+                </button>
+                <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+                  skills
                 </div>
               </div>
             </Link>
