@@ -1,6 +1,6 @@
 'use client'
-import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react';
 
 const Skills = () => {
 
@@ -34,7 +34,7 @@ const Skills = () => {
     const skills = [
         "Flutter & Dart",
         "UI/UX Design",
-        "State Management (Provider, GetX)",
+        "State Management (Provider, GetX, Riverpod)",
         "Firebase & Firestore",
         "REST API Integration",
         "Performance Optimization"
@@ -121,7 +121,7 @@ const Skills = () => {
                             ></div>
 
                             {/* Content */}
-                            <div className="mt-2">
+                            <div className="mt-4">
                                 <h3 className="text-lg font-semibold transition-all duration-500">
                                     {exp.title}
                                 </h3>
@@ -133,16 +133,13 @@ const Skills = () => {
                                 </p>
                             </div>
 
-
                         </div>
                     ))}
                 </div>
             </div>
 
-
-
         </div>
-    )
+    );
 }
 
 export default Skills
