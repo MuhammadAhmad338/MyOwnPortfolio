@@ -67,7 +67,7 @@ const Skills = () => {
             </div>
 
             <div className='px-4 pb-4'>
-                <h1 className="text-4xl font-bold mb-4 transition-all duration-500">Skills & Experience</h1>
+                <h1 className="text-3xl font-bold mb-4 transition-all duration-500">Skills</h1>
                 <p className={`
           ${darkMode ? 'text-gray-300' : 'text-gray-600'} 
           leading-relaxed
@@ -106,7 +106,7 @@ const Skills = () => {
             </ul>
 
             <div className="px-6 py-4">
-                <h2 className="text-2xl font-semibold mb-6 transition-all duration-500">
+                <h2 className="text-3xl font-semibold mb-6 transition-all duration-500">
                     Experience
                 </h2>
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
