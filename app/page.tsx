@@ -185,6 +185,7 @@ const Home: FC = () => {
             <Worktogether />
             <Links />
             <Footer />
+
         </div>
     );
 }
