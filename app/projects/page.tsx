@@ -2,7 +2,6 @@
 import Links from '../components/Links';
 import { useSelector } from 'react-redux';
 import Footer from '../components/Footer';
-import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import Worktogether from '../components/Worktogether';
 import AllProjects from '../components/AllProjects';
@@ -11,7 +10,6 @@ const Projects = () => {
     const darkMode = useSelector((state: any) => state.theme.darkMode);
     const [mounting, setMounting] = useState(true);
     const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
-    const router = useRouter();
 
     // Handle initial mount animation
     useEffect(() => {
@@ -59,9 +57,11 @@ const Projects = () => {
                 </p>
             </div>
 
- <AllProjects />
+            {/* All Projects */}
 
-           <Worktogether />
+            <AllProjects />
+
+            <Worktogether />
             <Links />
             <Footer />
         </div>

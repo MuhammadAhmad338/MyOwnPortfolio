@@ -5,7 +5,6 @@ import Links from './components/Links';
 import ahmad from '../public/ahmad.jpg';
 import Footer from './components/Footer';
 import { useSelector } from 'react-redux';
-import { useRouter } from 'next/navigation';
 import Worktogether from './components/Worktogether';
 import add from '../public/add.png';
 import copyemail from '../public/copyemail.png';
@@ -14,7 +13,6 @@ import AllProjects from './components/AllProjects';
 
 const Home: FC = () => {
 
-    const router = useRouter();
     const darkMode = useSelector((state: any) => state.theme.darkMode);
     const [mounting, setMounting] = useState(true);
     const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
@@ -112,9 +110,9 @@ const Home: FC = () => {
                         <span>Copy Email</span>
                     </button>
                 </div>
-
             </div>
 
+            {/* All Projects */}
            <AllProjects />
             {/* Let's work together section */}
 
