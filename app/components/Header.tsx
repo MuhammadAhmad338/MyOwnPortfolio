@@ -4,14 +4,12 @@ import Image from 'next/image';
 import bag from '../../public/bag.png';
 import home from '../../public/home.png';
 import React, { FC, useState } from 'react';
+import skills from '../../public/skills.png';
 import darkmode from '../../public/darkmode.png';
 import lightmode from '../../public/lightmode.png';
 import { toggleDarkMode } from '../Slices/themeSlice';
 import { useSelector, useDispatch } from 'react-redux'
 import userprofile from '../../public/userprofile.png';
-import customer from '../../public/review-customer.png';
-import skills from '../../public/skills.png';
-
 
 const NavBar: FC = () => {
   const darkMode = useSelector((state: any) => state.theme.darkMode);
@@ -45,9 +43,7 @@ const NavBar: FC = () => {
             <Link href="/">
               <div className="relative group">
                 <button
-                  className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 
-      ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
-      focus:outline-none`}
+                  className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}
                 >
                   <Image src={home} alt="Home" width={26} height={26} />
                 </button>
