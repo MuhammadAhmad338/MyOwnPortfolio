@@ -4,10 +4,9 @@ import NavBar from "./components/Header";
 import { Poppins } from "next/font/google";
 import { ReduxProvider } from "./Provider/provider";
 
-// Initialize the Poppins font
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400"], // Add multiple weights as needed
+  weight: ["400"], 
 });
 
 export const metadata: Metadata = {

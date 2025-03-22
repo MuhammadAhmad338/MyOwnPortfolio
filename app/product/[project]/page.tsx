@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import ProjectComponent from "@/app/components/projectComponent";
 import ghostdetector from "../../../public/ghostdetector.png";
 import pixelcount from "../../../public/pixelcount1.png";
+import prank from "../../../public/prankapp.png";
 import octa from '../../../public/octa.png';
 
 const Project = () => {
@@ -33,13 +34,13 @@ const Project = () => {
     pranksounds: {
       title: "Prank Sound App",
       description: "A fun and entertaining app filled with high-quality prank sounds.",
-      imagemain: ghostdetector,
+      imagemain: prank,
       articledata: [
         {
-          "imgsrc": ghostdetector,
+          "imgsrc": prank,
           "desc": "Prank Sounds App is designed to add laughter and surprise with a variety of hilarious sound effects.",
           "title": "Prank Sounds App",
-          "imgsrc1": ghostdetector,
+          "imgsrc1": prank,
           "solution": "We developed a playful and engaging app with an intuitive interface, categorized sound effects, and high-quality audio to ensure the best prank experience for users."
         }
       ]

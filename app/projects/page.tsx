@@ -3,8 +3,8 @@ import Links from '../components/Links';
 import { useSelector } from 'react-redux';
 import Footer from '../components/Footer';
 import React, { useEffect, useState } from 'react';
-import Worktogether from '../components/Worktogether';
 import AllProjects from '../components/AllProjects';
+import Worktogether from '../components/Worktogether';
 
 const Projects = () => {
     const darkMode = useSelector((state: any) => state.theme.darkMode);
@@ -58,7 +58,6 @@ const Projects = () => {
             </div>
 
             {/* All Projects */}
-
             <AllProjects />
 
             <Worktogether />
