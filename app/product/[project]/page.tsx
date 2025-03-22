@@ -6,6 +6,7 @@ import ghostdetector from "../../../public/ghostdetector.png";
 import pixelcount from "../../../public/pixelcount1.png";
 import prank from "../../../public/prankapp.png";
 import octa from '../../../public/octa.png';
+import newvpn from '../../../public/newvpn.png';
 
 const Project = () => {
   const params = useParams();
@@ -77,13 +78,13 @@ const Project = () => {
     kestrelvpn: {
       title: "Kestrel VPN",
       description: "A robust and secure VPN application.",
-      imagemain: ghostdetector,
+      imagemain: newvpn,
       articledata: [
         {
-          imgsrc: ghostdetector,
+          imgsrc: newvpn,
           desc: "Kestrel VPN is designed to provide users with a secure and private internet connection. It offers a range of features to ensure online safety and anonymity.",
           title: "Kestrel VPN",
-          imgsrc1: ghostdetector,
+          imgsrc1: newvpn,
           solution: "We developed a high-performance VPN application with strong encryption protocols and a user-friendly interface. The app is available on multiple platforms and provides a seamless and secure browsing experience."
         }
       ]
