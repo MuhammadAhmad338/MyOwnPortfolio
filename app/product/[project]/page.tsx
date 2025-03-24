@@ -6,7 +6,7 @@ import prank from "../../../public/prankapp.png";
 import newvpn from '../../../public/Kestrel VPN.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import ghostdetector from "../../../public/ghostdetector.png";
-import ProjectComponent from "@/app/components/projectComponent";
+import ProjectComponent from "@/app/components/ProjectComponent";
 
 const Project = () => {
   const params = useParams();
@@ -14,7 +14,6 @@ const Project = () => {
 
   console.log("Project parameter:", projectParam);
 
-  // Create a mapping object for your projects with images from public folder
   const projectData: Record<string, any> = {
     pixelcount: {
       title: "Pixel Count App",
@@ -46,7 +45,6 @@ const Project = () => {
         }
       ]
     },
-
     octavpn: {
       title: "Octa VPN App",
       description: "A secure and user-friendly VPN service for enhanced online privacy.",

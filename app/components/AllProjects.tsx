@@ -6,6 +6,7 @@ const AllProjects = () => {
   const darkMode = useSelector((state: any) => state.theme.darkMode);
   const router = useRouter();
 
+  
   return (
     <div
       className={`${
