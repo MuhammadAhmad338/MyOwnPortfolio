@@ -17,7 +17,6 @@ const Home: FC = () => {
     const [mounting, setMounting] = useState(true);
     const [prevDarkMode, setPrevDarkMode] = useState(darkMode);
 
-
     useEffect(() => {
         setMounting(false);
     }, []);

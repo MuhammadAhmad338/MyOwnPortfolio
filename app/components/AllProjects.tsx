@@ -54,7 +54,7 @@ const AllProjects = () => {
         } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 hover:shadow-md hover:shadow-black/20 transition-shadow cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
-          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+        <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -73,7 +73,7 @@ const AllProjects = () => {
           <div>
             <div className="font-bold text-lg">Ghost Detector</div>
             <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
-              Application Development, Entertainment
+              Entertainment Application
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@ const AllProjects = () => {
           <div>
             <div className="font-bold text-lg">Octa VPN</div>
             <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
-              Application Development, Application design
+            Entertainment Application
             </div>
           </div>
         </div>
