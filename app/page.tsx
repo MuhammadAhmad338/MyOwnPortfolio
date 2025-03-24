@@ -113,8 +113,8 @@ const Home: FC = () => {
 
             {/* All Projects */}
            <AllProjects />
+           
             {/* Let's work together section */}
-
             <Worktogether />
             <Links />
             <Footer />

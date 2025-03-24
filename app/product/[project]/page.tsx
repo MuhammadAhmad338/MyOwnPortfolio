@@ -1,12 +1,12 @@
-"use client";
+"use client"
 import React from "react";
-import { useParams } from "next/navigation";
-import ProjectComponent from "@/app/components/projectComponent";
-import ghostdetector from "../../../public/ghostdetector.png";
-import pixelcount from "../../../public/pixelcount1.png";
-import prank from "../../../public/prankapp.png";
 import octa from '../../../public/octa.png';
+import { useParams } from "next/navigation";
+import prank from "../../../public/prankapp.png";
 import newvpn from '../../../public/Kestrel VPN.png';
+import pixelcount from "../../../public/pixelcount1.png";
+import ghostdetector from "../../../public/ghostdetector.png";
+import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
   const params = useParams();
