@@ -21,6 +21,7 @@ const Worktogether = () => {
                             alt="add"
                             width={15}
                             height={15}
+                            priority 
                         />
                         <span>Hire me</span>
                     </button>
@@ -35,6 +36,7 @@ const Worktogether = () => {
                             alt="add"
                             width={15}
                             height={15}
+                            priority 
                         />
                     </div>
                     <span>Copy Email</span>

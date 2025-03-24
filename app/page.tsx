@@ -69,6 +69,7 @@ const Home: FC = () => {
                                     alt="Profile"
                                     width={140}
                                     height={140}
+                                    priority 
                                     className="rounded-full object-cover"
                                 />
                             </div>
@@ -87,6 +88,7 @@ const Home: FC = () => {
                                     alt="add"
                                     width={15}
                                     height={15}
+                                    priority 
                                  />
                             <span>Hire me</span>
                         </button>
@@ -104,6 +106,7 @@ const Home: FC = () => {
                                     alt="add"
                                     width={15}
                                     height={15}
+                                    priority 
                              /> 
                         </div>
                         <span>Copy Email</span>
@@ -113,7 +116,7 @@ const Home: FC = () => {
 
             {/* All Projects */}
            <AllProjects />
-           
+
             {/* Let's work together section */}
             <Worktogether />
             <Links />

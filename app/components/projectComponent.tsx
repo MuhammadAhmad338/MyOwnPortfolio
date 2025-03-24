@@ -64,6 +64,7 @@ const ProjectComponent: FC<{
                 className="object-cover h-full w-full mt-4 mb-4 rounded-lg" 
                 width={800} 
                 height={500} 
+                priority 
             />
             
             <div className='flex items-center justify-between p-4'>
@@ -79,6 +80,7 @@ const ProjectComponent: FC<{
                             className="object-cover h-full w-full mt-4 mb-4 rounded-lg" 
                             width={800} 
                             height={500} 
+                            priority 
                         />
                         <p>{item.desc}</p>
                         <div className='flex flex-col items-start justify-between mt-4'>
@@ -89,6 +91,7 @@ const ProjectComponent: FC<{
                                 className="object-cover h-full w-full mt-4 mb-4 rounded-lg" 
                                 width={800} 
                                 height={500} 
+                                priority 
                             />
                             <p>{item.solution}</p>
                         </div>
