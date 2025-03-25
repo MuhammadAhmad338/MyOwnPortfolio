@@ -6,7 +6,7 @@ import prank from "../../../public/prankapp.png";
 import newvpn from '../../../public/Kestrel VPN.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import ghostdetector from "../../../public/ghostdetector.png";
-import ProjectComponent from "@/app/components/ProjectComponent";
+import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
   const params = useParams();
