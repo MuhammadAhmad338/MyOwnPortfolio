@@ -52,7 +52,7 @@ const AllProjects = () => {
         onClick={() => router.push("/product/ghostdetector")}
         className={`${
           darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 hover:shadow-md hover:shadow-black/20 transition-shadow cursor-pointer`} //Added cursor pointer
+        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
         <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -100,7 +100,7 @@ const AllProjects = () => {
         onClick={() => router.push("/product/kestrelvpn")}
         className={`${
           darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 hover:shadow-md hover:shadow-black/20 transition-shadow cursor-pointer`} //Added cursor pointer
+        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -218,7 +218,7 @@ const AllProjects = () => {
         onClick={() => router.push("/product/octavpn")}
         className={`${
           darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 hover:shadow-md hover:shadow-black/20 transition-shadow cursor-pointer`}  //Added cursor pointer
+        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}  //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
