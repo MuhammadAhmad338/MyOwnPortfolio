@@ -7,6 +7,8 @@ import newvpn from '../../../public/Kestrel VPN.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import ProjectComponent from "@/app/components/projectComponent";
+import rockyvpn from '../../../public/rockyvpn.png';
+import gshieldvpn from '../../../public/gshieldvpn.png';
 
 const Project = () => {
   const params = useParams();
@@ -83,6 +85,34 @@ const Project = () => {
           desc: "Kestrel VPN is designed to provide users with a secure and private internet connection. It offers a range of features to ensure online safety and anonymity.",
           title: "Kestrel VPN",
           imgsrc1: newvpn,
+          solution: "We developed a high-performance VPN application with strong encryption protocols and a user-friendly interface. The app is available on multiple platforms and provides a seamless and secure browsing experience."
+        }
+      ]
+    },
+    rockyvpn: {
+      title: "Rocky VPN",
+      description: "A robust and flexible VPN application.",
+      imagemain: rockyvpn,
+      articledata: [
+        {
+          imgsrc: rockyvpn,
+          desc: "Rocky VPN is designed to provide users with a secure and private internet connection. It offers a range of features to ensure online safety and anonymity.",
+          title: "Rocky VPN",
+          imgsrc1: rockyvpn,
+          solution: "We developed a high-performance VPN application with strong encryption protocols and a user-friendly interface. The app is available on multiple platforms and provides a seamless and secure browsing experience."
+        }
+      ]
+    },
+    gshieldvpn: {
+      title: "Gshield VPN",
+      description: "A robust and flexible VPN application.",
+      imagemain: gshieldvpn,
+      articledata: [
+        {
+          imgsrc: gshieldvpn,
+          desc: "Gshield VPN is designed to provide users with a secure and private internet connection. It offers a range of features to ensure online safety and anonymity.",
+          title: "Gshield VPN",
+          imgsrc1: gshieldvpn,
           solution: "We developed a high-performance VPN application with strong encryption protocols and a user-friendly interface. The app is available on multiple platforms and provides a seamless and secure browsing experience."
         }
       ]

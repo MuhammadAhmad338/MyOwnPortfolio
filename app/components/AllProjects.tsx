@@ -120,9 +120,106 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Kestrel VPN</div>
+            <div className="font-bold text-lg">Kestrel VPN </div>
             <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
-              Application Productivity
+              Application Productivity / Privacy
+            </div>
+          </div>
+        </div>
+        <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </div>
+
+      
+      <div
+        onClick={() => router.push("/product/rockyvpn")}
+        className={`${
+          darkMode ? 'bg-zinc-800' : 'bg-white'
+        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
+      >
+        <div className="flex items-center">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+          </div>
+          <div>
+            <div className="font-bold text-lg">Rocky VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+              Application Productivity / Privacy
+            </div>
+          </div>
+        </div>
+        <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        onClick={() => router.push("/product/gshieldvpn")}
+        className={`${
+          darkMode ? 'bg-zinc-800' : 'bg-white'
+        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
+      >
+        <div className="flex items-center">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+          </div>
+          <div>
+            <div className="font-bold text-lg">Gshield VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+              Application Productivity / Privacy
             </div>
           </div>
         </div>
