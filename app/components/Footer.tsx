@@ -8,13 +8,13 @@ const Footer = () => {
     return (
         <div className={`${darkMode ? 'bg-zinc-900' : 'bg-gray-100'} px-10 py-10 mt-4 mb-2 rounded-xl ${darkMode ? 'text-white' : 'text-gray-600'} transition-colors duration-200`}>
             <div className="flex flex-col items-center space-y-3">
-                <p className="text-sm font-medium">© {new Date().getFullYear()} Subtle Folio – All rights reserved</p>
+                <p className="text-sm font-medium">© {new Date().getFullYear()} Muhammad Ahmad – All Rights Reserved</p>
                 <div className="flex items-center space-x-3 text-sm">
-                    <a href="#" className="hover:underline font-medium transition-colors duration-200 hover:text-gray-900">Nur Praditya</a>
+                    <a href="#" className="hover:underline font-medium transition-colors duration-200 hover:text-gray-900">Flutter</a>
                     <span className="text-gray-400">•</span>
-                    <a href="#" className="hover:underline font-medium transition-colors duration-200 hover:text-gray-900">MorvalLabs</a>
+                    <a href="#" className="hover:underline font-medium transition-colors duration-200 hover:text-gray-900">Nextjs</a>
                     <span className="text-gray-400">•</span>
-                    <a href="#" className="hover:underline font-medium transition-colors duration-200 hover:text-gray-900">Framer</a>
+                    <a href="#" className="hover:underline font-medium transition-colors duration-200 hover:text-gray-900">Expressjs</a>
                 </div>
             </div>
         </div>
