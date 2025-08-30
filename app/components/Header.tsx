@@ -24,8 +24,8 @@ const NavBar: FC = () => {
     setIsDownloading(true);
     // Create a link element
     const link = document.createElement('a');
-    link.href = '/muhammadahmad.pdf'; // Place your CV in the public folder with this name
-    link.download = 'muhammadahmad.pdf';
+    link.href = '/ahmad.pdf'; // Place your CV in the public folder with this name
+    link.download = 'ahmad.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
