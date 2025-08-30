@@ -3,12 +3,15 @@ import React from "react";
 import octa from '../../../public/octa.png';
 import { useParams } from "next/navigation";
 import prank from "../../../public/prankapp.png";
+import easyguard from '../../../public/easyguard.png';
 import newvpn from '../../../public/Kestrel VPN.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import ProjectComponent from "@/app/components/projectComponent";
 import rockyvpn from '../../../public/rockyvpn.png';
 import gshieldvpn from '../../../public/gshieldvpn.png';
+import freeroam from '../../../public/freeroam.png';
+import gotovpn from '../../../public/gotovpn.png';
 
 const Project = () => {
   const params = useParams();
@@ -44,6 +47,48 @@ const Project = () => {
           "title": "Prank Sounds App",
           "imgsrc1": prank,
           "solution": "We developed a playful and engaging app with an intuitive interface, categorized sound effects, and high-quality audio to ensure the best prank experience for users."
+        }
+      ]
+    },
+    easyguard: {
+      title: "EasyGuard VPN",
+      description: "A user-friendly VPN application for secure browsing.",
+      imagemain: easyguard,
+      articledata: [
+        {
+          imgsrc: easyguard,
+          desc: "EasyGuard VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
+          title: "EasyGuard VPN",
+          imgsrc1: easyguard,
+          solution: "We developed an intuitive VPN application with a straightforward interface, making it easy for users to connect and browse securely. The app includes essential features like one-click connection and automatic server selection."
+        }
+      ]
+    },
+    freeroam: {
+      title: "Freeroam VPN",
+      description: "A versatile VPN application for secure and unrestricted browsing.",
+      imagemain: freeroam,
+      articledata: [
+        {
+          imgsrc: freeroam,
+          desc: "Freeroam VPN is designed to provide users with a flexible and secure browsing experience. It allows users to access content from anywhere while keeping their online activities private.",
+          title: "Freeroam VPN",
+          imgsrc1: freeroam,
+          solution: "We developed a powerful VPN application with a focus on user freedom and privacy. The app features a wide range of server locations and advanced security protocols."
+        }
+      ]
+    },
+    gotovpn: {
+      title: "Goto VPN",
+      description: "A reliable VPN service for secure internet access.",
+      imagemain: gotovpn,
+      articledata: [
+        {
+          imgsrc: gotovpn,
+          desc: "Goto VPN is designed to provide users with a secure and private internet connection. It offers a range of features to ensure online safety and anonymity.",
+          title: "Goto VPN",
+          imgsrc1: gotovpn,
+          solution: "We developed a high-performance VPN application with strong encryption protocols and a user-friendly interface. The app is available on multiple platforms and provides a seamless and secure browsing experience."
         }
       ]
     },
