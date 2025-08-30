@@ -22,6 +22,7 @@ const Project = () => {
   const projectData: Record<string, any> = {
     pixelcount: {
       title: "Pixel Count App",
+      year: "2025",
       imagemain: pixelcount,
       description:
         "A mobile application for Android and iOS that processes and analyzes images, providing detailed pixel-level information and statistics.",
@@ -38,6 +39,7 @@ const Project = () => {
     },
     pranksounds: {
       title: "Prank Sound App",
+      year: "2024",
       description: "A fun and entertaining app filled with high-quality prank sounds.",
       imagemain: prank,
       articledata: [
@@ -52,6 +54,7 @@ const Project = () => {
     },
     easyguard: {
       title: "EasyGuard VPN",
+      year: "2025",
       description: "A user-friendly VPN application for secure browsing.",
       imagemain: easyguard,
       articledata: [
@@ -66,6 +69,7 @@ const Project = () => {
     },
     freeroam: {
       title: "Freeroam VPN",
+      year: "2025",
       description: "A versatile VPN application for secure and unrestricted browsing.",
       imagemain: freeroam,
       articledata: [
@@ -80,6 +84,7 @@ const Project = () => {
     },
     gotovpn: {
       title: "Goto VPN",
+      year: "2025",
       description: "A reliable VPN service for secure internet access.",
       imagemain: gotovpn,
       articledata: [
@@ -94,6 +99,7 @@ const Project = () => {
     },
     octavpn: {
       title: "Octa VPN App",
+      year: "2025",
       description: "A secure and user-friendly VPN service for enhanced online privacy.",
       imagemain: octa,
       articledata: [
@@ -108,6 +114,7 @@ const Project = () => {
     },
     ghostdetector: {
       title: "Ghost Detector App",
+      year: "2024",
       description: "A fun, fictional app that detects supernatural presences.",
       imagemain: ghostdetector,
       articledata: [
@@ -122,6 +129,7 @@ const Project = () => {
     },
     kestrelvpn: {
       title: "Kestrel VPN",
+      year: "2025",
       description: "A robust and secure VPN application.",
       imagemain: newvpn,
       articledata: [
@@ -136,6 +144,7 @@ const Project = () => {
     },
     rockyvpn: {
       title: "Rocky VPN",
+      year: "2025",
       description: "A robust and flexible VPN application.",
       imagemain: rockyvpn,
       articledata: [
@@ -150,6 +159,7 @@ const Project = () => {
     },
     gshieldvpn: {
       title: "Gshield VPN",
+      year: "2025",
       description: "A robust and flexible VPN application.",
       imagemain: gshieldvpn,
       articledata: [
@@ -187,6 +197,7 @@ const Project = () => {
         description={selectedProject.description}
         imagemain={selectedProject.imagemain}
         articledata={selectedProject.articledata}
+        year={selectedProject.year}
       />
     </>
   );

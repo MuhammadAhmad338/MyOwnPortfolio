@@ -54,7 +54,7 @@ const ProjectComponent: FC<{
                     </div>
                     <div className='grid grid-cols-2 gap-4'>
                         <span className='text-sm w-24'>Year</span>
-                        <span className='text-sm flex-1'>2024</span>
+                        <span className='text-sm flex-1'>2025</span>
                     </div>
                 </div>
             </div>
