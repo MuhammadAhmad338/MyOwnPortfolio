@@ -3,15 +3,15 @@ import React from "react";
 import octa from '../../../public/octa.png';
 import { useParams } from "next/navigation";
 import prank from "../../../public/prankapp.png";
-import easyguard from '../../../public/easyguard.png';
+import gotovpn from '../../../public/gotovpn.png';
+import rockyvpn from '../../../public/rockyvpn.png';
+import freeroam from '../../../public/freeroam.png';
 import newvpn from '../../../public/Kestrel VPN.png';
+import easyguard from '../../../public/easyguard.png';
+import gshieldvpn from '../../../public/gshieldvpn.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import ProjectComponent from "@/app/components/projectComponent";
-import rockyvpn from '../../../public/rockyvpn.png';
-import gshieldvpn from '../../../public/gshieldvpn.png';
-import freeroam from '../../../public/freeroam.png';
-import gotovpn from '../../../public/gotovpn.png';
 
 const Project = () => {
   const params = useParams();
