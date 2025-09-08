@@ -38,12 +38,12 @@ const NavBar: FC = () => {
       <div className="px-2 sm:px-4 pt-3" style={{ maxWidth: '608px', width: '100%' }}>
         <nav className={`px-2 py-2 shadow-lg rounded-xl flex justify-between items-center transition-colors duration-200`} style={{ backgroundColor: darkMode ? '#2c2c2c' : 'white' }}>
           {/* Left side navigation icons */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-3.5">
             {/* Home icon */}
             <Link href="/">
               <div className="relative group">
                 <button
-                  className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}
+                  className={`w-8 h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}
                 >
                   <Image src={home} alt="Home" width={26} height={26} priority  />
                 </button>

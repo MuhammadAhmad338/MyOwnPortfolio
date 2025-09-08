@@ -8,6 +8,7 @@ import React, { FC, useEffect, useState } from 'react';
 
 const ProjectComponent: FC<{
     title: string;
+    year: string;
     description: string,
     imagemain: string,
     articledata: {
