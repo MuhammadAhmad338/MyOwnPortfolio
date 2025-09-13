@@ -1,7 +1,8 @@
 'use client'
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../Store/store';
+import { setDarkMode } from '../Slices/themeSlice';
 
 export default function ThemeProvider({
   children,
@@ -9,7 +10,21 @@ export default function ThemeProvider({
   children: React.ReactNode;
 }) {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
-  
+  const dispatch = useDispatch();
+
+  // On mount, check localStorage for theme
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        dispatch(setDarkMode(true));
+      } else if (savedTheme === 'light') {
+        dispatch(setDarkMode(false));
+      }
+    }
+    // eslint-disable-next-line
+  }, []);
+
   useEffect(() => {
     // Apply theme attribute to html element
     if (darkMode) {
