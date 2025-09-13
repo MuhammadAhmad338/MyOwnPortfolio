@@ -11,6 +11,7 @@ import easyguard from '../../../public/easyguard.png';
 import gshieldvpn from '../../../public/gshieldvpn.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import ghostdetector from "../../../public/ghostdetector.png";
+import kryptonyme from '../../../public/kryptonyme.png';
 import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
@@ -49,6 +50,21 @@ const Project = () => {
           "title": "Prank Sounds App",
           "imgsrc1": prank,
           "solution": "We developed a playful and engaging app with an intuitive interface, categorized sound effects, and high-quality audio to ensure the best prank experience for users."
+        }
+      ]
+    },
+    kryptonyme: {
+      title: "Kryptonyme VPN",
+      year: "2025",
+      description: "A user-friendly VPN application for secure browsing.",
+      imagemain: kryptonyme,
+      articledata: [
+        {
+          imgsrc: kryptonyme,
+          desc: "Kryptonyme VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
+          title: "Kryptonyme VPN",
+          imgsrc1: kryptonyme,
+          solution: "We developed an intuitive VPN application with a straightforward interface, making it easy for users to connect and browse securely. The app includes essential features like one-click connection and automatic server selection."
         }
       ]
     },
