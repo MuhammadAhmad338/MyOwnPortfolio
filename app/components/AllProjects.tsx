@@ -8,26 +8,23 @@ const AllProjects = () => {
 
   return (
     <div
-      className={`${
-        darkMode
+      className={`${darkMode
           ? 'bg-zinc-900 text-white'
           : 'bg-gray-100 text-gray-800'
-      } p-4 mt-4 rounded-xl transition-colors duration-200`}
+        } p-4 mt-4 rounded-xl transition-colors duration-200`}
     >
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center">
           <div
-            className={`w-2 h-2 ${
-              darkMode ? 'bg-gray-500' : 'bg-gray-400'
-            } rounded-full mr-2`}
+            className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'
+              } rounded-full mr-2`}
           ></div>
           <span className="text-lg font-medium">Projects</span>
         </div>
         <div
           onClick={() => router.push("/projects")}
-          className={`${
-            darkMode ? 'text-gray-300' : 'text-gray-500'
-          } flex items-center text-sm cursor-pointer`} //Added cursor pointer
+          className={`${darkMode ? 'text-gray-300' : 'text-gray-500'
+            } flex items-center text-sm cursor-pointer`} //Added cursor pointer
         >
           <span>View All</span>
           <svg
@@ -49,12 +46,11 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/ghostdetector")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
-        <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -95,14 +91,13 @@ const AllProjects = () => {
         </div>
       </div>
 
-<div
+      <div
         onClick={() => router.push("/product/gotovpn")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
-        <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -143,14 +138,62 @@ const AllProjects = () => {
         </div>
       </div>
 
-         <div
-        onClick={() => router.push("/product/kryptonyme")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
+
+      <div
+        onClick={() => router.push("/product/safenetvpn")}
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
-        <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+          </div>
+          <div>
+            <div className="font-bold text-lg">SafeNet VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+              Productivity / Privacy Application
+            </div>
+          </div>
+        </div>
+        <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </div>
+
+
+      <div
+        onClick={() => router.push("/product/kryptonyme")}
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
+      >
+        <div className="flex items-center">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -191,15 +234,14 @@ const AllProjects = () => {
         </div>
       </div>
 
-      
+
       <div
         onClick={() => router.push("/product/easyguard")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
-        <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -242,12 +284,11 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/freeroam")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
-        <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -290,9 +331,8 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/kestrelvpn")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -336,12 +376,11 @@ const AllProjects = () => {
         </div>
       </div>
 
-      
+
       <div
         onClick={() => router.push("/product/rockyvpn")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -387,9 +426,8 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/gshieldvpn")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -435,9 +473,8 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/pranksounds")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-indigo-900 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
@@ -470,9 +507,8 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/pixelcount")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`} //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`} //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -505,9 +541,8 @@ const AllProjects = () => {
 
       <div
         onClick={() => router.push("/product/octavpn")}
-        className={`${
-          darkMode ? 'bg-zinc-800' : 'bg-white'
-        } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}  //Added cursor pointer
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}  //Added cursor pointer
       >
         <div className="flex items-center">
           <div className="bg-red-400 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
@@ -529,7 +564,7 @@ const AllProjects = () => {
           <div>
             <div className="font-bold text-lg">Octa VPN</div>
             <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
-            Entertainment Application
+              Entertainment Application
             </div>
           </div>
         </div>

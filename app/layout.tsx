@@ -21,23 +21,23 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={poppins.className}>
-            <body className="antialiased flex flex-col items-center justify-center sm:pt-20 pt-20 px-2 sm:px-4 md:px-4">
+      <body className="antialiased flex flex-col items-center justify-center sm:pt-20 pt-20 px-2 sm:px-4 md:px-4">
 
-      <head>
-        {/* Google Analytics script */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-S0R9HLFJKJ"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+        <head>
+          {/* Google Analytics script */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-S0R9HLFJKJ"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-S0R9HLFJKJ');
           `}
-        </Script>
-      </head>
+          </Script>
+        </head>
 
         <ReduxProvider>
           <NavBar />
