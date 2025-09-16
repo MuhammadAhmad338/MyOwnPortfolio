@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import NavBar from "./components/Header";
 import { Poppins } from "next/font/google";
 import { ReduxProvider } from "./Provider/provider";
+import Script from "next/script"; // 👈
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,6 +22,20 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body className="antialiased flex flex-col items-center justify-center sm:pt-20 pt-20 px-2 sm:px-4 md:px-4">
+        {/* Google Analytics scripts (client-only) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
+
         <ReduxProvider>
           <NavBar />
           {children}

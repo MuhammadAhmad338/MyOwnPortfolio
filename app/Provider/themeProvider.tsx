@@ -1,8 +1,8 @@
 'use client'
 import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../Store/store';
 import { setDarkMode } from '../Slices/themeSlice';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function ThemeProvider({
   children,
@@ -22,7 +22,6 @@ export default function ThemeProvider({
         dispatch(setDarkMode(false));
       }
     }
-    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
