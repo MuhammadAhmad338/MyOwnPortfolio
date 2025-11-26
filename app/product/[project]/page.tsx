@@ -12,6 +12,8 @@ import gshieldvpn from '../../../public/gshieldvpn.png';
 import kryptonyme from '../../../public/kryptonyme.png';
 import pixelcount from "../../../public/pixelcount1.png";
 import safenet from "../../../public/safenet.png";
+import tytanvpn from "../../../public/tytanvpn.png";
+import totemvpn from "../../../public/totemvpn.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import ProjectComponent from "@/app/components/projectComponent";
 
@@ -53,6 +55,39 @@ const Project = () => {
           "solution": "We developed a playful and engaging app with an intuitive interface, categorized sound effects, and high-quality audio to ensure the best prank experience for users."
         }
       ]
+    },
+    tytanvpn: {
+      title: "Tytan VPN App",
+      year: "2025",
+      imagemain: tytanvpn,
+      description:
+        "A mobile application for Android and iOS that processes and analyzes images, providing detailed pixel-level information and statistics.",
+      articledata: [
+        {
+          imgsrc: tytanvpn,
+          desc: "Our mobile image analysis tool was developed to provide users with detailed insights into their images. The application processes images directly on mobile devices to extract valuable information about pixel distribution, color patterns, and image composition.",
+          title: "Tytan VPN App",
+          imgsrc1: tytanvpn,
+          solution:
+            "We developed a native mobile application using the Flutter framework to ensure seamless performance on both Android and iOS devices. The app features real-time analysis, intuitive mobile-friendly visualization of results, and leverages device cameras for instant image analysis capabilities.",
+        },
+      ],
+    },
+    totemvpn: {
+      title: "Totem VPN App",
+      year: "2025",
+      imagemain: totemvpn,
+      description:
+        "A mobile application for Android and iOS that processes and analyzes images, providing detailed pixel-level information and statistics.",
+      articledata: [
+        {
+          imgsrc: totemvpn,
+          desc: "Our mobile image analysis tool was developed to provide users with detailed insights into their images. The application processes images directly on mobile devices to extract valuable information about pixel distribution, color patterns, and image composition.",
+          title: "Totem VPN App",
+          imgsrc1: totemvpn,
+          solution: "We developed a native mobile application using the Flutter framework to ensure seamless performance on both Android and iOS devices. The app features real-time analysis, intuitive mobile-friendly visualization of results, and leverages device cameras for instant image analysis capabilities.",
+        },
+      ],
     },
     safenetvpn: {
       title: "SafeNet VPN",

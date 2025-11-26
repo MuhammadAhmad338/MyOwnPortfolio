@@ -69,7 +69,7 @@ const Home: FC = () => {
                                     alt="Profile"
                                     width={140}
                                     height={140}
-                                    priority 
+                                    priority
                                     className="rounded-full object-cover"
                                 />
                             </div>
@@ -84,12 +84,12 @@ const Home: FC = () => {
                 <div className="flex justify-center lg:justify-start space-x-4">
                     <Link href='/contact'>
                         <button className={`${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} px-3 py-1.5 space-x-2 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-sm`}>
-                                <Image src={add}
-                                    alt="add"
-                                    width={15}
-                                    height={15}
-                                    priority 
-                                 />
+                            <Image src={add}
+                                alt="add"
+                                width={15}
+                                height={15}
+                                priority
+                            />
                             <span>Hire me</span>
                         </button>
                     </Link>
@@ -102,12 +102,12 @@ const Home: FC = () => {
                         className={`${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} px-3 py-1 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-sm`}
                     >
                         <div className="mr-2">
-                        <Image src={copyemail}
-                                    alt="add"
-                                    width={15}
-                                    height={15}
-                                    priority 
-                             /> 
+                            <Image src={copyemail}
+                                alt="add"
+                                width={15}
+                                height={15}
+                                priority
+                            />
                         </div>
                         <span>Copy Email</span>
                     </button>
@@ -115,7 +115,7 @@ const Home: FC = () => {
             </div>
 
             {/* All Projects */}
-           <AllProjects />
+            <AllProjects />
 
             {/* Let's work together section */}
             <Worktogether />
