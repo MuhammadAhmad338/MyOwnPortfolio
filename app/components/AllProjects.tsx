@@ -9,8 +9,8 @@ const AllProjects = () => {
   return (
     <div
       className={`${darkMode
-          ? 'bg-zinc-900 text-white'
-          : 'bg-gray-100 text-gray-800'
+        ? 'bg-zinc-900 text-white'
+        : 'bg-gray-100 text-gray-800'
         } p-4 mt-4 rounded-xl transition-colors duration-200`}
     >
       <div className="flex items-center justify-between mb-4">
@@ -138,7 +138,7 @@ const AllProjects = () => {
         </div>
       </div>
 
-<div
+      <div
         onClick={() => router.push("/product/tytanvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
           } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`} //Added cursor pointer
@@ -184,7 +184,7 @@ const AllProjects = () => {
           </svg>
         </div>
       </div>
-      
+
       <div
         onClick={() => router.push("/product/totemvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
