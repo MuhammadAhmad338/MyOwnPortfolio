@@ -44,7 +44,7 @@ const Project = () => {
     },
     soravpn: {
       title: "Sora VPN",
-      year: "2025",
+      year: "2026",
       imagemain: soravpn,
       description: "A productivity and privacy application for Android and iOS that provides a seamless and secure browsing experience.",
         articledata: [
