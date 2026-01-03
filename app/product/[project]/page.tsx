@@ -16,6 +16,7 @@ import tytanvpn from "../../../public/tytanvpn.png";
 import totemvpn from "../../../public/totemvpn.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import ProjectComponent from "@/app/components/projectComponent";
+import soravpn from '../../../public/soravpn.png';
 
 const Project = () => {
   const params = useParams();
@@ -38,6 +39,21 @@ const Project = () => {
           imgsrc1: pixelcount,
           solution:
             "We developed a native mobile application using the Flutter framework to ensure seamless performance on both Android and iOS devices. The app features real-time analysis, intuitive mobile-friendly visualization of results, and leverages device cameras for instant image analysis capabilities.",
+        },
+      ],
+    },
+    soravpn: {
+      title: "Sora VPN",
+      year: "2025",
+      imagemain: soravpn,
+      description: "A productivity and privacy application for Android and iOS that provides a seamless and secure browsing experience.",
+        articledata: [
+        {
+          imgsrc: soravpn,
+          desc: "Sora VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
+          title: "Sora VPN",
+          imgsrc1: soravpn,
+          solution: "We developed an intuitive VPN application with a straightforward interface, making it easy for users to connect and browse securely. The app includes essential features like one-click connection and automatic server selection.",
         },
       ],
     },
