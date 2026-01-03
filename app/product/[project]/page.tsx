@@ -58,7 +58,7 @@ const Project = () => {
       ],
     },
     pranksounds: {
-      title: "Prank Sound App",
+      title: "Prank Sounds App",
       year: "2024",
       description: "A fun and entertaining app filled with high-quality prank sounds.",
       imagemain: prank,
