@@ -53,7 +53,7 @@ const Projects = () => {
           leading-relaxed
           transition-all duration-500
         `}>
-                    Here are some of my most recent projects that I have worked on. Each project showcases my skills and creativity in design and development.
+                    Here are some of  most projects that I have worked on. Each project showcases my skills and creativity in design and development.
                 </p>
             </div>
 
