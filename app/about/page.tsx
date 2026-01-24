@@ -4,9 +4,8 @@ import Links from '../components/Links';
 import { useSelector } from 'react-redux';
 import Footer from '../components/Footer';
 import ahmad from '../../public/ahmad.jpg';
-
+import { FC, useEffect, useState } from 'react';
 import Worktogether from '../components/Worktogether';
-import React, { FC, useEffect, useState } from 'react';
 
 const About: FC = () => {
     const darkMode = useSelector((state: any) => state.theme.darkMode);

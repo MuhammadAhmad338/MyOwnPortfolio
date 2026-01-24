@@ -1,9 +1,13 @@
 "use client"
-import React from "react";
 import octa from '../../../public/octa.png';
 import { useParams } from "next/navigation";
 import prank from "../../../public/prankapp.png";
 import gotovpn from '../../../public/gotovpn.png';
+import safenet from "../../../public/safenet.png";
+import soravpn from '../../../public/soravpn.png';
+import yallavpn from '../../../public/yallavpn.png';
+import totemvpn from "../../../public/totemvpn.png";
+import tytanvpn from "../../../public/tytanvpn.png";
 import rockyvpn from '../../../public/rockyvpn.png';
 import freeroam from '../../../public/freeroam.png';
 import newvpn from '../../../public/Kestrel VPN.png';
@@ -11,12 +15,8 @@ import easyguard from '../../../public/easyguard.png';
 import gshieldvpn from '../../../public/gshieldvpn.png';
 import kryptonyme from '../../../public/kryptonyme.png';
 import pixelcount from "../../../public/pixelcount1.png";
-import safenet from "../../../public/safenet.png";
-import tytanvpn from "../../../public/tytanvpn.png";
-import totemvpn from "../../../public/totemvpn.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import ProjectComponent from "@/app/components/projectComponent";
-import soravpn from '../../../public/soravpn.png';
 
 const Project = () => {
   const params = useParams();
@@ -53,6 +53,21 @@ const Project = () => {
           desc: "Sora VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
           title: "Sora VPN",
           imgsrc1: soravpn,
+          solution: "We developed an intuitive VPN application with a straightforward interface, making it easy for users to connect and browse securely. The app includes essential features like one-click connection and automatic server selection.",
+        },
+      ],
+    },
+    yallavpn: {
+      title: "Yalla VPN",
+      year: "2026",
+      imagemain: yallavpn,
+      description: "A productivity and privacy application for Android and iOS that provides a seamless and secure browsing experience.",
+        articledata: [
+        {
+          imgsrc: yallavpn,
+          desc: "Yalla VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
+          title: "Yalla VPN",
+          imgsrc1: yallavpn,
           solution: "We developed an intuitive VPN application with a straightforward interface, making it easy for users to connect and browse securely. The app includes essential features like one-click connection and automatic server selection.",
         },
       ],
