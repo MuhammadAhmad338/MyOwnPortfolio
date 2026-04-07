@@ -5,6 +5,7 @@ import prank from "../../../public/prankapp.png";
 import gotovpn from '../../../public/gotovpn.png';
 import safenet from "../../../public/safenet.png";
 import soravpn from '../../../public/soravpn.png';
+import seelvpn from '../../../public/seelvpn.png';
 import yallavpn from '../../../public/yallavpn.png';
 import totemvpn from "../../../public/totemvpn.png";
 import tytanvpn from "../../../public/tytanvpn.png";
@@ -47,7 +48,7 @@ const Project = () => {
       year: "2026",
       imagemain: soravpn,
       description: "A productivity and privacy application for Android and iOS that provides a seamless and secure browsing experience.",
-        articledata: [
+      articledata: [
         {
           imgsrc: soravpn,
           desc: "Sora VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
@@ -57,12 +58,27 @@ const Project = () => {
         },
       ],
     },
+    seelvpn: {
+      title: "Seel VPN",
+      year: "2026",
+      imagemain: seelvpn,
+      description: "A productivity and privacy application for Android and iOS that provides a seamless and secure browsing experience.",
+      articledata: [
+        {
+          imgsrc: seelvpn,
+          desc: "Seel VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
+          title: "Seel VPN",
+          imgsrc1: seelvpn,
+          solution: "We developed an intuitive VPN application with a straightforward interface, making it easy for users to connect and browse securely. The app includes essential features like one-click connection and automatic server selection.",
+        },
+      ],
+    },
     yallavpn: {
       title: "Yalla VPN",
       year: "2026",
       imagemain: yallavpn,
       description: "A productivity and privacy application for Android and iOS that provides a seamless and secure browsing experience.",
-        articledata: [
+      articledata: [
         {
           imgsrc: yallavpn,
           desc: "Yalla VPN is designed to provide users with a simple and effective way to protect their online privacy. With a focus on ease of use, it offers a seamless experience for users of all technical levels.",
