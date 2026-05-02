@@ -16,7 +16,11 @@ import easyguard from '../../../public/easyguard.png';
 import gshieldvpn from '../../../public/gshieldvpn.png';
 import kryptonyme from '../../../public/kryptonyme.png';
 import pixelcount from "../../../public/pixelcount1.png";
+import anzatexintl1 from "../../../public/anzatexintl1.png";
+import anzatexintl2 from "../../../public/anzatexintl2.png";
+import anzatexintl3 from "../../../public/anzatexintl3.png";
 import ghostdetector from "../../../public/ghostdetector.png";
+
 import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
@@ -26,6 +30,24 @@ const Project = () => {
   console.log("Project parameter:", projectParam);
 
   const projectData: Record<string, any> = {
+
+    anzatexintl: {
+      title: "Anzatex Intl",
+      year: "2026",
+      imagemain: anzatexintl1,
+      description:
+        "Ecommerce platform for Anzatex Intl",
+      articledata: [
+        {
+          imgsrc: anzatexintl2,
+          desc: " An e-commerce platform for Anzatex Intl, a company that sells textiles and clothing. The platform allows users to browse and purchase products, and provides a seamless shopping experience.",
+          title: "Anzatex Intl",
+          imgsrc1: anzatexintl3,
+          solution:
+           "The platform was built using modern web technologies to ensure fast loading times, responsive design, and a smooth user experience across all devices."
+        },
+      ],
+    },
     pixelcount: {
       title: "Pixel Count App",
       year: "2025",
