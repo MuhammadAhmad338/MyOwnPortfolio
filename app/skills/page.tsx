@@ -1,6 +1,6 @@
 'use client'
 import { useSelector } from 'react-redux';
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 
 const Skills = () => {
 
@@ -18,25 +18,35 @@ const Skills = () => {
 
     const experienceData = [
         {
-            title: "Flutter Developer",
-            company: "TechClub",
+            title: "Full Stack Developer",
+            company: "Self Empolyeed",
             date: "Present",
-            description: "Developing and maintaining Flutter applications for various projects and initiatives."
+            description: "Developing full stack applications using Flutter, React, and AWS. Building scalable backend systems and cloud-native solutions."
         },
         {
             title: "Flutter Developer",
+            company: "TeCClub",
+            date: "1.3 Year",
+            description: "Worked on mobile applications using Flutter, implementing UI/UX designs and integrating APIs. Gained experience in backend development."
+        },
+        {
+            title: "Junior Developer",
             company: "Appecient",
-            date: "10 Months",
-            description: "Worked on mobile applications using Flutter, implementing UI/UX designs and integrating APIs."
+            date: "1 Year",
+            description: "Built various Flutter applications and backend systems for clients. Developed REST APIs and worked on database design."
         }
     ];
 
     const skills = [
         "Flutter & Dart",
+        "React & Next.js",
+        "Full Stack Development",
+        "AWS (EC2, S3, Lambda, RDS)",
         "UI/UX Design",
         "State Management (Provider, GetX, Riverpod)",
         "Firebase & Firestore",
         "REST API Integration",
+        "Cloud Architecture",
         "Performance Optimization"
     ];
 
@@ -110,7 +120,7 @@ const Skills = () => {
                     Experience
                 </h2>
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                    I have worked extensively with Flutter, developing scalable and high-performance mobile applications. My expertise includes UI/UX design, state management using Provider and GetX, Firebase integration, REST API implementation, and building seamless user experiences.
+                    I have 2.3 years of full stack development experience, working with Flutter, React, and modern web technologies. My expertise includes building scalable backend systems, APIs, and frontend interfaces. I have hands-on experience with AWS services including EC2, S3, Lambda, and RDS, and I'm actively transitioning to cloud architecture roles to design robust, cloud-native solutions.
                 </p>
                 <div className="relative ml-6 border-l-2 border-gray-300 dark:border-gray-700">
                     {experienceData.map((exp, index) => (
