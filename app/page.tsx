@@ -1,4 +1,5 @@
 'use client'
+
 import Link from 'next/link';
 import Image from 'next/image';
 import add from '../public/add.png';
@@ -6,10 +7,10 @@ import Links from './components/Links';
 import ahmad from '../public/ahmad.jpg';
 import Footer from './components/Footer';
 import { useSelector } from 'react-redux';
+import { FC, useEffect, useState } from 'react';
 import copyemail from '../public/copyemail.png';
 import AllProjects from './components/AllProjects';
 import Worktogether from './components/Worktogether';
-import React, { FC, useEffect, useState } from 'react';
 
 const Home: FC = () => {
 

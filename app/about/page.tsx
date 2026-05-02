@@ -43,7 +43,7 @@ const About: FC = () => {
             <div className="flex flex-col space-y-6 px-4 mb-8 pb-4">
                 <h1 className="text-4xl font-bold transition-all duration-500">It's Me Muhammad</h1>
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                I'm Ahmad, a Software Engineer with over 5 years of experience, currently residing in Faisalabad, Pakistan. I have a deep passion for building scalable applications using Flutter and React. My main goal is to bridge the gap between people and technology, transforming complex challenges into seamless and meaningful digital experiences.
+                I'm Ahmad, a Flutter Backend Developer with 2.3 years of experience, currently residing in Faisalabad, Pakistan. I have a deep passion for building scalable applications using Flutter. My main goal is to bridge the gap between people and technology, transforming complex challenges into seamless and meaningful digital experiences. Currently, I'm actively transitioning to cloud architecture to design robust, cloud-native solutions.
                 </p>
             </div>
 
@@ -62,7 +62,7 @@ const About: FC = () => {
                 <h2 className="text-3xl font-bold transition-all duration-500">More About Me</h2>
 
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
-                I hold a bachelor's degree in Software Engineering from Riphah International University and have a strong passion for staying up-to-date with the latest technologies and development trends. With expertise in Flutter and React, I specialize in building modern, scalable applications that enhance user experiences.
+                I hold a bachelor's degree in Software Engineering from Riphah International University and have a strong passion for staying up-to-date with the latest technologies and development trends. With 2.3 years of specialized experience in Flutter backend development, I've built robust backend systems and APIs. I'm now expanding my skill set to include cloud technologies, containerization, and infrastructure as code to transition into cloud architecture roles.
                 </p>
 
                 <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed transition-all duration-500`}>
