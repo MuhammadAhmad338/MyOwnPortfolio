@@ -21,6 +21,7 @@ import anzatexintl2 from "../../../public/anzatexintl2.png";
 import anzatexintl3 from "../../../public/anzatexintl3.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import taskflow from '../../../public/taskflow.png';
+import fooddash from '../../../public/fooddash.png';
 import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
@@ -31,6 +32,23 @@ const Project = () => {
 
   const projectData: Record<string, any> = {
 
+    fooddash: {
+      title: "FoodDash",
+      year: "2026",
+      imagemain: fooddash,
+      description:
+        "An all-in-one food delivery and restaurant management mobile platform connecting customers, restaurants, and delivery orders seamlessly.",
+      articledata: [
+        {
+          imgsrc: fooddash,
+          desc: "FoodDash provides a comprehensive food ordering experience. Users can search nearby restaurants, browse menu dishes, manage saved addresses, track live orders, view payment methods, and toggle restaurant open/close statuses.",
+          title: "FoodDash App",
+          imgsrc1: fooddash,
+          solution:
+            "We built a robust, user-centered mobile food delivery ecosystem featuring real-time order tracking, address management, dish discovery, and merchant order management."
+        },
+      ],
+    },
     taskflow: {
       title: "TaskFlow",
       year: "2026",
