@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 
@@ -44,6 +43,53 @@ const AllProjects = () => {
         </div>
       </div>
 
+
+      <div
+        onClick={() => router.push("/product/taskflow")}
+        className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
+          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+      >
+        <div className="flex items-center">
+          <div className="bg-indigo-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+              />
+            </svg>
+          </div>
+          <div>
+            <div className="font-bold text-lg">TaskFlow</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+              Task Management Application
+            </div>
+          </div>
+        </div>
+        <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </div>
 
       <div
         onClick={() => router.push("/product/anzatexintl")}

@@ -20,7 +20,7 @@ import anzatexintl1 from "../../../public/anzatexintl1.png";
 import anzatexintl2 from "../../../public/anzatexintl2.png";
 import anzatexintl3 from "../../../public/anzatexintl3.png";
 import ghostdetector from "../../../public/ghostdetector.png";
-
+import taskflow from '../../../public/taskflow.png';
 import ProjectComponent from "@/app/components/projectComponent";
 
 const Project = () => {
@@ -31,6 +31,23 @@ const Project = () => {
 
   const projectData: Record<string, any> = {
 
+    taskflow: {
+      title: "TaskFlow",
+      year: "2026",
+      imagemain: taskflow,
+      description:
+        "A modern task management and productivity mobile application for Android and iOS designed to help users stay organized and stay ahead.",
+      articledata: [
+        {
+          imgsrc: taskflow,
+          desc: "TaskFlow is designed to provide users with an intuitive, clean, and modern task tracking experience. Featuring pending and completed task stats, due dates, priority labels (Low, Medium, High), search, and recurrence settings (Daily, Weekly, Monthly).",
+          title: "TaskFlow App",
+          imgsrc1: taskflow,
+          solution:
+            "We built a feature-packed task management application focusing on exceptional UI/UX, smooth transitions, and simple task organization to keep users focused and organized."
+        },
+      ],
+    },
     anzatexintl: {
       title: "Anzatex Intl",
       year: "2026",
