@@ -1,9 +1,8 @@
-"use client";
-
+"use client"
 import { useSelector } from "react-redux";
+import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { projects } from "@/app/data/projects";
-import { ArrowRight } from "lucide-react";
 
 const AllProjects = () => {
   const darkMode = useSelector((state: any) => state.theme.darkMode);

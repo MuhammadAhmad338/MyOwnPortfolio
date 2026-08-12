@@ -1,5 +1,4 @@
 'use client'
-
 import Link from 'next/link';
 import Image from 'next/image';
 import add from '../public/add.png';
@@ -89,7 +88,6 @@ const Home: FC = () => {
                                 alt="add"
                                 width={15}
                                 height={15}
-                                priority
                                 className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                             />
                             <span>Hire me</span>
@@ -108,7 +106,6 @@ const Home: FC = () => {
                                 alt="add"
                                 width={15}
                                 height={15}
-                                priority
                                 className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                             />
                         </div>

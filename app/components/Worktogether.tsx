@@ -20,7 +20,6 @@ const Worktogether = () => {
                             alt="add"
                             width={15}
                             height={15}
-                            priority 
                             className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                         />
                         <span>Hire me</span>
@@ -36,7 +35,6 @@ const Worktogether = () => {
                             alt="add"
                             width={15}
                             height={15}
-                            priority 
                             className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                         />
                     </div>
