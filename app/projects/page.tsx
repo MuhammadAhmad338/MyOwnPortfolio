@@ -36,21 +36,21 @@ const Projects = () => {
 
             }}
         >
-            <div className="flex items-center mb-6 p-6">
+            <div className="flex items-center mb-3 sm:mb-6 p-3 sm:p-6">
                 <div className={`
           w-2 h-2 
           ${darkMode ? 'bg-gray-400' : 'bg-gray-500'} 
           rounded-full mr-2
           transition-all duration-500
         `}></div>
-                <span className="text-lg font-bold">Projects</span>
+                <span className="text-sm sm:text-lg font-bold">Projects</span>
             </div>
 
-            <div className='px-4 mb-8 pb-4'>
-                <h1 className="text-4xl font-bold mb-4 transition-all duration-500">My Works</h1>
+            <div className='px-3 sm:px-4 mb-6 sm:mb-8 pb-4'>
+                <h1 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-4 transition-all duration-500">My Works</h1>
                 <p className={`
           ${darkMode ? 'text-gray-300' : 'text-gray-600'} 
-          leading-relaxed
+          text-xs sm:text-base leading-relaxed
           transition-all duration-500
         `}>
                     Here are some of  most projects that I have worked on. Each project showcases my skills and creativity in design and development.

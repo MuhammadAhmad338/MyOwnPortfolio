@@ -47,54 +47,54 @@ const ProjectComponent: FC<{
                 animationDuration: '500ms',
                 backgroundColor: darkMode ? '#2c2c2c' : 'white',
             }}>
-            <div className={`${darkMode ? 'bg-zinc-800' : 'bg-slate-100'} flex items-center mb-6 p-6 rounded-xl`}>
-                <div className='flex flex-col w-full space-y-3'>
-                    <div className='grid grid-cols-2 gap-4'>
-                        <span className='text-sm w-24'>Project Type</span>
-                        <span className='text-sm flex-1'>{title}</span>
+            <div className={`${darkMode ? 'bg-zinc-800' : 'bg-slate-100'} flex items-center mb-4 sm:mb-6 p-3 sm:p-6 rounded-xl`}>
+                <div className='flex flex-col w-full space-y-2 sm:space-y-3'>
+                    <div className='grid grid-cols-2 gap-2 sm:gap-4'>
+                        <span className='text-xs sm:text-sm w-24'>Project Type</span>
+                        <span className='text-xs sm:text-sm flex-1'>{title}</span>
                     </div>
-                    <div className='grid grid-cols-2 gap-4'>
-                        <span className='text-sm w-24'>Year</span>
-                        <span className='text-sm flex-1'>{year}</span>
+                    <div className='grid grid-cols-2 gap-2 sm:gap-4'>
+                        <span className='text-xs sm:text-sm w-24'>Year</span>
+                        <span className='text-xs sm:text-sm flex-1'>{year}</span>
                     </div>
                 </div>
             </div>
             <Image
                 src={imagemain}
                 alt={`${title} main image`}
-                className="object-cover h-full w-full mt-4 mb-4 rounded-lg"
+                className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
                 width={800}
                 height={500}
                 priority
             />
 
-            <div className='flex items-center justify-between p-4'>
-                <h1 className='font-bold text-3xl'>{title}</h1>
+            <div className='flex items-center justify-between p-2 sm:p-4'>
+                <h1 className='font-bold text-xl sm:text-3xl'>{title}</h1>
             </div>
-            <p className='p-4'>{description}</p>
+            <p className='p-2 sm:p-4 text-xs sm:text-base'>{description}</p>
             {
                 articledata.map((item, index) => (
-                    <div key={index} className='p-4'>
+                    <div key={index} className='p-2 sm:p-4'>
                         <Image
                             src={item.imgsrc}
                             alt={`${title} image ${index + 1}`}
-                            className="object-cover h-full w-full mt-4 mb-4 rounded-lg"
+                            className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
                             width={800}
                             height={500}
                             priority
                         />
-                        <p>{item.desc}</p>
-                        <div className='flex flex-col items-start justify-between mt-4'>
-                            <h1 className='font-bold text-2xl'>My Solution</h1>
+                        <p className='text-xs sm:text-base'>{item.desc}</p>
+                        <div className='flex flex-col items-start justify-between mt-3 sm:mt-4'>
+                            <h1 className='font-bold text-lg sm:text-2xl'>My Solution</h1>
                             <Image
                                 src={item.imgsrc1}
                                 alt={`${title} solution image ${index + 1}`}
-                                className="object-cover h-full w-full mt-4 mb-4 rounded-lg"
+                                className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
                                 width={800}
                                 height={500}
                                 priority
                             />
-                            <p>{item.solution}</p>
+                            <p className='text-xs sm:text-base'>{item.solution}</p>
                         </div>
                     </div>
                 ))

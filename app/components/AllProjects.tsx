@@ -10,15 +10,15 @@ const AllProjects = () => {
       className={`${darkMode
         ? 'bg-zinc-900 text-white'
         : 'bg-gray-100 text-gray-800'
-        } p-4 mt-4 rounded-xl transition-colors duration-200`}
+        } p-2.5 sm:p-4 mt-4 rounded-xl transition-colors duration-200`}
     >
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-3 sm:mb-4">
         <div className="flex items-center">
           <div
             className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'
               } rounded-full mr-2`}
           ></div>
-          <span className="text-lg font-medium">Projects</span>
+          <span className="text-sm sm:text-lg font-medium">Projects</span>
         </div>
         <div
           onClick={() => router.push("/projects")}
@@ -47,13 +47,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/fooddash")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-orange-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -67,8 +67,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">FoodDash</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">FoodDash</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Food Delivery & Restaurant App
             </div>
           </div>
@@ -76,7 +76,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -94,13 +94,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/taskflow")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-indigo-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-indigo-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -114,8 +114,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">TaskFlow</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">TaskFlow</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Task Management Application
             </div>
           </div>
@@ -123,7 +123,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -141,13 +141,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/anzatexintl")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-rose-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-rose-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -161,8 +161,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Anzatex Intl</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Anzatex Intl</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               E-commerce Platform
             </div>
           </div>
@@ -170,7 +170,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -188,13 +188,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/ghostdetector")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-purple-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -208,8 +208,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Ghost Detector</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Ghost Detector</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Entertainment Application
             </div>
           </div>
@@ -217,7 +217,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -235,13 +235,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/soravpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-blue-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -255,8 +255,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Sora VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Sora VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -264,7 +264,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -282,13 +282,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/seelvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-cyan-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-cyan-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -302,8 +302,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Seel Vpn</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Seel Vpn</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -311,7 +311,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -329,13 +329,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/yallavpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-amber-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -349,8 +349,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Yalla VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Yalla VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -358,7 +358,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -376,13 +376,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/tytanvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-slate-700 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-slate-700 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -396,8 +396,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Tytan VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Tytan VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -405,7 +405,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -423,13 +423,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/totemvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-teal-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-teal-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -443,8 +443,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Totem VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Totem VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -452,7 +452,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -470,13 +470,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/gotovpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-sky-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-sky-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -490,8 +490,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Goto VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Goto VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -499,7 +499,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -517,13 +517,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/safenetvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-emerald-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-emerald-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -537,8 +537,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">SafeNet VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">SafeNet VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -546,7 +546,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -564,13 +564,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/kryptonyme")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-violet-700 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-violet-700 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -584,8 +584,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Kryptonyme VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Kryptonyme VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -593,7 +593,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -611,13 +611,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/easyguard")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-green-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -631,8 +631,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">EasyGuard VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">EasyGuard VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -640,7 +640,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -658,13 +658,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/freeroam")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-orange-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -678,8 +678,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Freeroam VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Freeroam VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Productivity / Privacy Application
             </div>
           </div>
@@ -687,7 +687,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -705,13 +705,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/kestrelvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-blue-700 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -725,8 +725,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Kestrel VPN </div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Kestrel VPN </div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Application Productivity / Privacy
             </div>
           </div>
@@ -734,7 +734,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -752,13 +752,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/rockyvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-zinc-700 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-zinc-700 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -772,8 +772,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Rocky VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Rocky VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Application Productivity / Privacy
             </div>
           </div>
@@ -781,7 +781,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -799,13 +799,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/gshieldvpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 transition-shadow cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-red-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -819,8 +819,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Gshield VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Gshield VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Application Productivity / Privacy
             </div>
           </div>
@@ -828,7 +828,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -846,13 +846,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/pranksounds")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-pink-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-pink-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -866,8 +866,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Prank Sounds</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Prank Sounds</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               App development and design
             </div>
           </div>
@@ -875,7 +875,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -893,13 +893,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/pixelcount")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full transition-colors duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-indigo-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -913,8 +913,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Pixel Count</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Pixel Count</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               App Design, and development
             </div>
           </div>
@@ -922,7 +922,7 @@ const AllProjects = () => {
         <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-4 w-4 sm:h-6 sm:w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -940,13 +940,13 @@ const AllProjects = () => {
       <div
         onClick={() => router.push("/product/octavpn")}
         className={`${darkMode ? 'bg-zinc-800' : 'bg-white'
-          } rounded-xl p-6 mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
+          } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full duration-200 cursor-pointer`}
       >
         <div className="flex items-center">
-          <div className="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center text-white mr-4">
+          <div className="bg-purple-500 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 sm:h-6 sm:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -960,8 +960,8 @@ const AllProjects = () => {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-lg">Octa VPN</div>
-            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-sm`}>
+            <div className="font-bold text-sm sm:text-lg">Octa VPN</div>
+            <div className={`${darkMode ? 'text-gray-400' : 'text-gray-500'} text-xs sm:text-sm`}>
               Entertainment Application
             </div>
           </div>

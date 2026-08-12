@@ -56,10 +56,10 @@ const Contact = () => {
         >
             <div className='flex flex-col space-y-6'>
                 {/* Header with status indicators */}
-                <div className='flex justify-between items-center p-4'>
+                <div className='flex justify-between items-center p-3 sm:p-4'>
                     <div className="flex items-center">
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
-                        <span className="text-lg font-medium">Hire Me</span>
+                        <span className="text-sm sm:text-lg font-medium">Hire Me</span>
                     </div>
 
                     <div className="flex justify-center items-center h-full">
@@ -72,21 +72,21 @@ const Contact = () => {
                 </div>
 
                 {/* Main title */}
-                <div className='px-4 py-2'>
-                    <h1 className="text-4xl font-bold">Your Inquiry</h1>
-                    <p className="text-gray-500 text-md mt-2">Got an idea and need development and design help? Reach out now</p>
+                <div className='px-3 sm:px-4 py-2'>
+                    <h1 className="text-2xl sm:text-4xl font-bold">Your Inquiry</h1>
+                    <p className="text-gray-500 text-xs sm:text-base mt-1 sm:mt-2">Got an idea and need development and design help? Reach out now</p>
                 </div>
 
                 {/* Form */}
-                <div className='space-y-4 px-4 pb-4'>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                <div className='space-y-3 sm:space-y-4 px-3 sm:px-4 pb-4'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4'>
                         <input
                             type="text"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
                             placeholder='name'
-                            className={`py-2 px-2 rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
+                            className={`py-2 px-2.5 text-xs sm:text-sm rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
                         />
                         <input
                             type="email"
@@ -94,7 +94,7 @@ const Contact = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className={`py-2 px-2 rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
+                            className={`py-2 px-2.5 text-xs sm:text-sm rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
                         />
                     </div>
                     <textarea
@@ -103,9 +103,9 @@ const Contact = () => {
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        className={`w-full py-2 px-2 rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
+                        className={`w-full py-2 px-2.5 text-xs sm:text-sm rounded-lg ${darkMode ? 'bg-zinc-700' : 'bg-gray-100 border border-gray-400'} focus:border-gray-500 focus:outline-none`}
                     />
-                    <button className="w-full py-3 bg-black font-bold text-white rounded-lg" onClick={handleSubmit}>
+                    <button className="w-full py-2.5 sm:py-3 bg-black font-bold text-xs sm:text-base text-white rounded-lg" onClick={handleSubmit}>
                         Submit
                     </button>
                 </div>

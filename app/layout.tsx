@@ -21,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="antialiased flex flex-col items-center justify-center sm:pt-20 pt-20 px-2 sm:px-4 md:px-4">
+      <body className="antialiased flex flex-col items-center justify-center pt-16 sm:pt-20 px-2 sm:px-4 md:px-4">
 
         <head>
           {/* Google Analytics script */}
