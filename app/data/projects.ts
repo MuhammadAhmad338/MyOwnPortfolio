@@ -15,9 +15,41 @@ import {
     Image,
     Volume2,
     Star,
+    BookOpen,
+    Braces,
+    FileText,
+    WandSparkles,
 } from "lucide-react";
 
 export const projects = [
+    {
+        name: "FlutterLearn",
+        description: "Flutter Learning Platform",
+        route: "/product/flutterlearn",
+        bg: "bg-sky-500",
+        icon: BookOpen,
+    },
+    {
+        name: "DevKitTools",
+        description: "Developer Utilities Platform",
+        route: "/product/devkittools",
+        bg: "bg-blue-600",
+        icon: Braces,
+    },
+    {
+        name: "Resumely",
+        description: "CV Builder Platform",
+        route: "/product/resumely",
+        bg: "bg-violet-600",
+        icon: FileText,
+    },
+    {
+        name: "RemoveFlow",
+        description: "Image Background Removal Tool",
+        route: "/product/removeflow",
+        bg: "bg-indigo-600",
+        icon: WandSparkles,
+    },
     {
         name: "FoodDash",
         description: "Food Delivery & Restaurant App",

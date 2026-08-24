@@ -22,6 +22,10 @@ import anzatexintl3 from "../../../public/anzatexintl3.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import taskflow from '../../../public/taskflow.png';
 import fooddash from '../../../public/fooddash.png';
+import flutterlearn from '../../../public/flutterlearn.png';
+import devkittools from '../../../public/devkittools.png';
+import resumely from '../../../public/resumely.png';
+import removeflow from '../../../public/removeflow.png';
 import ProjectComponent from "@/app/components/projectComponent";
 
 const ProjectClient = () => {
@@ -31,6 +35,75 @@ const ProjectClient = () => {
   console.log("Project parameter:", projectParam);
 
   const projectData: Record<string, any> = {
+
+    flutterlearn: {
+      title: "FlutterLearn",
+      year: "2026",
+      imagemain: flutterlearn,
+      description:
+        "A free, structured Flutter curriculum that guides developers from their first widget through production-ready concepts.",
+      articledata: [
+        {
+          imgsrc: flutterlearn,
+          desc: "FlutterLearn organizes 26 lessons into beginner, intermediate, and advanced modules with clear explanations, complete code samples, and practical exercises.",
+          title: "FlutterLearn",
+          imgsrc1: flutterlearn,
+          solution:
+            "We designed a focused learning experience with straightforward navigation, clear curriculum levels, and an approachable path through the entire course without sign-up barriers."
+        },
+      ],
+    },
+    devkittools: {
+      title: "DevKitTools",
+      year: "2026",
+      imagemain: devkittools,
+      description:
+        "A privacy-focused collection of everyday developer utilities with fast, local processing and a clean interface.",
+      articledata: [
+        {
+          imgsrc: devkittools,
+          desc: "DevKitTools brings focused utilities such as JSON formatting, Base64 encoding, UUID generation, JWT decoding, and password generation into one streamlined workspace.",
+          title: "DevKitTools",
+          imgsrc1: devkittools,
+          solution:
+            "We created a polished tool suite that delivers instant results in the browser, keeps user data local, and makes frequently used developer tasks easy to find."
+        },
+      ],
+    },
+    resumely: {
+      title: "Resumely",
+      year: "2026",
+      imagemain: resumely,
+      description:
+        "A modern CV builder for creating clean, ATS-friendly resumes with real-time editing and instant PDF downloads.",
+      articledata: [
+        {
+          imgsrc: resumely,
+          desc: "Resumely combines professional templates with an approachable editing experience so users can create and preview a polished CV in one place.",
+          title: "Resumely",
+          imgsrc1: resumely,
+          solution:
+            "We designed a calm, confidence-building workflow with strong typography, clear calls to action, live save feedback, and quick access to downloadable resumes."
+        },
+      ],
+    },
+    removeflow: {
+      title: "RemoveFlow",
+      year: "2026",
+      imagemain: removeflow,
+      description:
+        "A simple browser-based tool that automatically removes image backgrounds for free while keeping the workflow fast and accessible.",
+      articledata: [
+        {
+          imgsrc: removeflow,
+          desc: "RemoveFlow offers upload, drag-and-drop, and clipboard input options alongside sample images and an immediate before-and-after preview.",
+          title: "RemoveFlow",
+          imgsrc1: removeflow,
+          solution:
+            "We built a clear single-purpose experience with a prominent upload area, useful input alternatives, and a visual comparison that communicates the result at a glance."
+        },
+      ],
+    },
 
     fooddash: {
       title: "FoodDash",
