@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowUpRight, Mail } from 'lucide-react';
 import { useSelector } from 'react-redux';
+import type { RootState } from '../Store/store';
 
 const navigation = [
     { label: 'About', href: '/about' },
@@ -11,7 +12,7 @@ const navigation = [
 ];
 
 const Footer = () => {
-    const darkMode = useSelector((state: any) => state.theme.darkMode);
+    const darkMode = useSelector((state: RootState) => state.theme.darkMode);
     const year = new Date().getFullYear();
 
     return (
@@ -27,7 +28,7 @@ const Footer = () => {
                     <div className="max-w-sm">
                         <div className="mb-3 flex items-center gap-2">
                             <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
-                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+                                <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60 motion-safe:animate-ping" />
                                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
                             </span>
                             <span className={`text-xs font-medium ${darkMode ? 'text-zinc-300' : 'text-gray-600'}`}>
@@ -44,14 +45,14 @@ const Footer = () => {
 
                     <Link
                         href="/contact"
-                        className={`group inline-flex w-fit items-center gap-2 rounded-lg px-4 py-2.5 text-xs font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:text-sm ${
+                        className={`group inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-fit sm:text-sm ${
                             darkMode
                                 ? 'bg-white text-zinc-900 hover:bg-zinc-200 focus:ring-offset-zinc-900'
                                 : 'bg-gray-900 text-white hover:bg-gray-700 focus:ring-offset-gray-100'
                         }`}
                     >
                         Start a conversation
-                        <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+                        <ArrowUpRight className="h-4 w-4 transition-transform duration-200 motion-safe:group-hover:-translate-y-0.5 motion-safe:group-hover:translate-x-0.5" aria-hidden="true" />
                     </Link>
                 </div>
             </div>

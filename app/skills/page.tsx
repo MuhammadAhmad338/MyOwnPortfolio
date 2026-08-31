@@ -1,6 +1,9 @@
 'use client'
 import { useSelector } from 'react-redux';
 import  { useEffect, useState } from 'react';
+import Footer from '../components/Footer';
+import Links from '../components/Links';
+import Worktogether from '../components/Worktogether';
 
 const Skills = () => {
 
@@ -147,6 +150,10 @@ const Skills = () => {
                     ))}
                 </div>
             </div>
+
+            <Worktogether />
+            <Links />
+            <Footer />
 
         </div>
     );
