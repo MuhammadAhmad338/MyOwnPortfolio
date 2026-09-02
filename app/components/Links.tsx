@@ -10,10 +10,10 @@ const Links = () => {
                     <span className="text-sm sm:text-lg font-medium">Follow Me</span>
                 </div>
                 <div className="flex space-x-2 sm:space-x-4">
-                    {/* Twitter/X */}
-                    <a href="#" title="Follow on Twitter/X" aria-label="Follow on Twitter/X" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black flex items-center justify-center text-white">
+                    {/* Reddit */}
+                    <a href="https://www.reddit.com/user/Ok_Being417/" title="View Reddit profile" aria-label="View Reddit profile" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black flex items-center justify-center text-white" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            <path d="M24 12c0-1.657-1.343-3-3-3-.814 0-1.551.325-2.091.851-1.799-1.2-4.31-1.972-7.096-2.062l1.2-3.769 3.25.765a2.25 2.25 0 102.21-1.82c-.842 0-1.575.464-1.961 1.15l-3.817-.899a.75.75 0 00-.886.497L10.52 7.76c-2.844.057-5.413.825-7.246 2.037A2.988 2.988 0 003 9a3 3 0 00-1.722 5.457A4.847 4.847 0 001.2 15.3c0 4.142 4.835 7.5 10.8 7.5s10.8-3.358 10.8-7.5c0-.257-.019-.511-.055-.76A2.998 2.998 0 0024 12zM6.6 14.1a1.8 1.8 0 113.6 0 1.8 1.8 0 01-3.6 0zm9.645 4.155C15.148 19.352 13.77 19.8 12 19.8s-3.148-.448-4.245-1.545a.75.75 0 011.06-1.06c.803.802 1.815 1.105 3.185 1.105s2.382-.303 3.185-1.105a.75.75 0 011.06 1.06zM15.6 15.9a1.8 1.8 0 110-3.6 1.8 1.8 0 010 3.6z" />
                         </svg>
                     </a>
                     {/* Instagram */}
@@ -32,6 +32,12 @@ const Links = () => {
                     <a href="https://www.linkedin.com/in/muhammad-ahmad-9005a6253" title="Follow on LinkedIn" aria-label="Follow on LinkedIn" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black flex items-center justify-center text-white" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    {/* GitHub */}
+                    <a href="https://github.com/MuhammadAhmad338" title="View GitHub profile" aria-label="View GitHub profile" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black flex items-center justify-center text-white" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current">
+                            <path d="M12 .297a12 12 0 00-3.79 23.39c.6.113.82-.26.82-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.419-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23A11.51 11.51 0 0112 6.102c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.806 5.624-5.479 5.921.43.372.814 1.102.814 2.222v3.293c0 .32.216.694.825.576A12.003 12.003 0 0012 .297z" />
                         </svg>
                     </a>
                 </div>
