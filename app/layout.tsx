@@ -1,7 +1,7 @@
+import "./globals.css";
 import Script from "next/script";
 import type { Metadata } from "next";
 import NavBar from "./components/Header";
-import "./globals.css";
 import { Poppins } from "next/font/google";
 import { ReduxProvider } from "./Provider/provider";
 

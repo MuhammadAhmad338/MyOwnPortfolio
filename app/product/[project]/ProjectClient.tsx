@@ -24,15 +24,15 @@ import taskflow from '../../../public/taskflow.png';
 import fooddash from '../../../public/fooddash.png';
 import flutterlearn from '../../../public/flutterlearn.png';
 import devkittools from '../../../public/devkittools.png';
+import devkittoolsApp from '../../../public/devkittools-app.png';
 import resumely from '../../../public/resumely.png';
+import resumelyApp from '../../../public/resumely-app.png';
 import removeflow from '../../../public/removeflow.png';
 import ProjectComponent from "@/app/components/projectComponent";
 
 const ProjectClient = () => {
   const params = useParams();
   const projectParam = params?.project;
-
-  console.log("Project parameter:", projectParam);
 
   const projectData: Record<string, any> = {
 
@@ -70,6 +70,23 @@ const ProjectClient = () => {
         },
       ],
     },
+    devkittoolsapp: {
+      title: "DevKitTools App",
+      year: "2026",
+      imagemain: devkittoolsApp,
+      description:
+        "A mobile developer toolkit with fast offline utilities, favorites, recent tools, and an AI coding assistant.",
+      articledata: [
+        {
+          imgsrc: devkittoolsApp,
+          desc: "DevKitTools App puts practical utilities such as Word Counter, JSON Formatter, Base64 tools, and Password Generator into a focused mobile workspace.",
+          title: "DevKitTools App",
+          imgsrc1: devkittoolsApp,
+          solution:
+            "The app combines local, offline processing with quick search, saved favorites, and an AI assistant for code questions and debugging help."
+        },
+      ],
+    },
     resumely: {
       title: "Resumely",
       year: "2026",
@@ -84,6 +101,23 @@ const ProjectClient = () => {
           imgsrc1: resumely,
           solution:
             "We designed a calm, confidence-building workflow with strong typography, clear calls to action, live save feedback, and quick access to downloadable resumes."
+        },
+      ],
+    },
+    resumelyapp: {
+      title: "Resumely App",
+      year: "2026",
+      imagemain: resumelyApp,
+      description:
+        "A guided mobile CV builder with professional templates, live previews, structured editing, and an AI CV coach.",
+      articledata: [
+        {
+          imgsrc: resumelyApp,
+          desc: "Resumely App guides users through personal details, summaries, experience, template selection, and live CV previews from a mobile-first interface.",
+          title: "Resumely App",
+          imgsrc1: resumelyApp,
+          solution:
+            "The AI CV coach provides focused feedback and helps users turn their experience into clearer, stronger achievement statements."
         },
       ],
     },

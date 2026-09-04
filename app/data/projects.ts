@@ -19,6 +19,7 @@ import {
     Braces,
     FileText,
     WandSparkles,
+    Smartphone,
 } from "lucide-react";
 
 export const projects = [
@@ -37,11 +38,25 @@ export const projects = [
         icon: Braces,
     },
     {
+        name: "DevKitTools App",
+        description: "Mobile Developer Utilities",
+        route: "/product/devkittoolsapp",
+        bg: "bg-blue-500",
+        icon: Smartphone,
+    },
+    {
         name: "Resumely",
         description: "CV Builder Platform",
         route: "/product/resumely",
         bg: "bg-violet-600",
         icon: FileText,
+    },
+    {
+        name: "Resumely App",
+        description: "Mobile CV Builder & AI Coach",
+        route: "/product/resumelyapp",
+        bg: "bg-violet-500",
+        icon: Smartphone,
     },
     {
         name: "RemoveFlow",
