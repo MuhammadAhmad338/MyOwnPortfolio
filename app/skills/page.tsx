@@ -103,7 +103,7 @@ const Skills = () => {
                         {/* Dot */}
                         <div className={`
               w-2 h-2 rounded-full 
-              ${darkMode ? 'bg-blue-400' : 'bg-blue-500'}
+              ${darkMode ? 'bg-emerald-400' : 'bg-emerald-500'}
             `}></div>
 
                         {/* Line */}
@@ -130,7 +130,7 @@ const Skills = () => {
                         <div key={index} className="relative pl-6 sm:pl-10 pb-6 sm:pb-12">
 
                             <div
-                                className={`absolute left-[-6px] top-6 w-2.5 h-2.5 rounded-full ${darkMode ? 'bg-blue-400' : 'bg-blue-500'} transition-all duration-500`}
+                                className={`absolute left-[-6px] top-6 w-2.5 h-2.5 rounded-full ${darkMode ? 'bg-emerald-400' : 'bg-emerald-500'} transition-all duration-500`}
                             ></div>
 
                             {/* Content */}

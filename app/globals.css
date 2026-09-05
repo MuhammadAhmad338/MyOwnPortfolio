@@ -9,7 +9,7 @@
   --front: #ffffff;
   --text-primary: #212121;
   --text-secondary: #555555;
-  --accent: #0070f3;
+  --accent: #059669;
 }
 
 [data-theme="dark"] {
@@ -19,7 +19,7 @@
   --front: #2c2c2c;
   --text-primary: #e1e1e1;
   --text-secondary: #a0a0a0;
-  --accent: #3b82f6;
+  --accent: #10b981;
 }
 
 body {

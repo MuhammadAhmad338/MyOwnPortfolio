@@ -1,15 +1,9 @@
 'use client'
 import Link from 'next/link';
-import Image from 'next/image';
-import bag from '../../public/bag.png';
-import home from '../../public/home.png';
 import React, { FC, useState } from 'react';
-import skills from '../../public/skills.png';
-import darkmode from '../../public/darkmode.png';
-import lightmode from '../../public/lightmode.png';
+import { Home, User, FolderKanban, Wrench, Sun, Moon } from 'lucide-react';
 import { toggleDarkMode } from '../Slices/themeSlice';
-import { useSelector, useDispatch } from 'react-redux'
-import userprofile from '../../public/userprofile.png';
+import { useSelector, useDispatch } from 'react-redux';
 
 const NavBar: FC = () => {
   const darkMode = useSelector((state: any) => state.theme.darkMode);
@@ -45,7 +39,7 @@ const NavBar: FC = () => {
                 <button
                   className={`w-7 h-7 sm:w-10 sm:h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'} focus:outline-none`}
                 >
-                  <Image src={home} alt="Home" width={26} height={26} className={`w-4 h-4 sm:w-6 sm:h-6 object-contain ${darkMode ? 'invert' : ''}`} />
+                  <Home className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   home
@@ -61,7 +55,7 @@ const NavBar: FC = () => {
                   ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
                    focus:outline-none`}
                 >
-                  <Image src={userprofile} alt="Home" width={26} height={26} className={`w-4 h-4 sm:w-6 sm:h-6 object-contain ${darkMode ? 'invert' : ''}`} />
+                  <User className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   about
@@ -69,7 +63,7 @@ const NavBar: FC = () => {
               </div>
             </Link>
 
-            {/* Calendar icon */}
+            {/* Projects icon */}
             <Link href="/projects">
               <div className="relative group">
                 <button
@@ -77,7 +71,7 @@ const NavBar: FC = () => {
                    ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
                   focus:outline-none`}
                 >
-                  <Image src={bag} alt="Home" width={26} height={26} className={`w-4 h-4 sm:w-6 sm:h-6 object-contain ${darkMode ? 'invert' : ''}`} />
+                  <FolderKanban className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   projects
@@ -85,7 +79,7 @@ const NavBar: FC = () => {
               </div>
             </Link>
 
-            {/* Calendar icon */}
+            {/* Skills icon */}
             <Link href="/skills">
               <div className="relative group">
                 <button
@@ -93,7 +87,7 @@ const NavBar: FC = () => {
                 ${darkMode ? 'text-white hover:bg-zinc-700' : 'text-gray-800 hover:bg-gray-200'}
                focus:outline-none`}
                 >
-                  <Image src={skills} alt="Home" width={26} height={26} className={`w-4 h-4 sm:w-6 sm:h-6 object-contain ${darkMode ? 'invert' : ''}`} />
+                  <Wrench className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
                 <div className={`absolute bottom-full -mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded-full text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} shadow-md`}>
                   skills
@@ -107,12 +101,12 @@ const NavBar: FC = () => {
             {/* Theme toggle */}
             <button
               onClick={handleToggleTheme}
-              className={`${darkMode ? 'text-white hover:text-gray-300' : 'text-gray-800 hover:text-gray-600'} focus:outline-none transition-colors duration-200`}
+              className={`${darkMode ? 'text-white hover:text-emerald-400' : 'text-gray-800 hover:text-emerald-600'} focus:outline-none transition-colors duration-200 p-1 sm:p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-700`}
             >
               {darkMode ? (
-                <Image src={lightmode} alt="Light Mode" width={24} height={24} className="w-4 h-4 sm:w-6 sm:h-6 object-contain invert" />
+                <Sun className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400" />
               ) : (
-                <Image src={darkmode} alt="Dark Mode " width={24} height={24} className="w-4 h-4 sm:w-6 sm:h-6 object-contain" />
+                <Moon className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-700" />
               )}
             </button>
 

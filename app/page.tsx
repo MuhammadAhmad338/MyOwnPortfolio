@@ -1,13 +1,12 @@
 'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import add from '../public/add.png';
+import { Plus, Copy } from 'lucide-react';
 import Links from './components/Links';
 import ahmad from '../public/ahmad.jpg';
 import Footer from './components/Footer';
 import { useSelector } from 'react-redux';
 import { FC, useEffect, useState } from 'react';
-import copyemail from '../public/copyemail.png';
 import AllProjects from './components/AllProjects';
 import Worktogether from './components/Worktogether';
 
@@ -47,9 +46,9 @@ const Home: FC = () => {
                         <div className={`w-2 h-2 ${darkMode ? 'bg-gray-500' : 'bg-gray-400'} rounded-full mr-2`}></div>
                         <span className="text-xs sm:text-lg font-bold">Software Engineer</span>
                     </div>
-                    <div className="bg-green-800 px-2 sm:px-4 py-0.5 sm:py-1 rounded-full flex items-center">
-                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full mr-1.5 sm:mr-2"></div>
-                        <span className="text-[10px] sm:text-xs font-bold text-green-200">AVAILABLE FOR WORK</span>
+                    <div className="bg-emerald-900/80 px-2 sm:px-4 py-0.5 sm:py-1 rounded-full flex items-center">
+                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-emerald-400 rounded-full mr-1.5 sm:mr-2"></div>
+                        <span className="text-[10px] sm:text-xs font-bold text-emerald-200">AVAILABLE FOR WORK</span>
                     </div>
                 </div>
 
@@ -74,22 +73,17 @@ const Home: FC = () => {
                                 />
                             </div>
                             {/* Skills indicator dots */}
-                            <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs">UI</div>
-                            <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs">UX</div>
-                            <div className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 w-5 h-5 sm:w-6 sm:h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs">3D</div>
+                            <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 bg-emerald-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs font-semibold">UI</div>
+                            <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 bg-teal-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs font-semibold">UX</div>
+                            <div className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 w-5 h-5 sm:w-6 sm:h-6 bg-amber-500 rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs font-semibold">3D</div>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex justify-center lg:justify-start space-x-2 sm:space-x-4">
                     <Link href='/contact'>
-                        <button className={`${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} px-2.5 py-1.5 sm:px-3 sm:py-1.5 space-x-1.5 sm:space-x-2 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-xs sm:text-sm`}>
-                            <Image src={add}
-                                alt="add"
-                                width={15}
-                                height={15}
-                                className="w-3.5 h-3.5 sm:w-4 sm:h-4"
-                            />
+                        <button className={`${darkMode ? 'bg-zinc-800 text-white hover:bg-zinc-700' : 'bg-white text-gray-800 hover:bg-gray-100'} px-2.5 py-1.5 sm:px-3 sm:py-1.5 space-x-1.5 sm:space-x-2 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-xs sm:text-sm`}>
+                            <Plus className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-500" />
                             <span>Hire me</span>
                         </button>
                     </Link>
@@ -99,15 +93,10 @@ const Home: FC = () => {
                                 .then(() => alert('Email copied to clipboard!'))
                                 .catch(err => console.error('Failed to copy:', err));
                         }}
-                        className={`${darkMode ? 'bg-zinc-800 text-white' : 'bg-white text-gray-800'} px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-xs sm:text-sm`}
+                        className={`${darkMode ? 'bg-zinc-800 text-white hover:bg-zinc-700' : 'bg-white text-gray-800 hover:bg-gray-100'} px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-md flex items-center transition-colors duration-200 border ${darkMode ? 'border-zinc-700' : 'border-gray-200'} text-xs sm:text-sm`}
                     >
                         <div className="mr-1 sm:mr-2">
-                            <Image src={copyemail}
-                                alt="add"
-                                width={15}
-                                height={15}
-                                className="w-3.5 h-3.5 sm:w-4 sm:h-4"
-                            />
+                            <Copy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-500" />
                         </div>
                         <span>Copy Email</span>
                     </button>
