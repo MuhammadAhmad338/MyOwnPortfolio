@@ -1,7 +1,7 @@
 import ProjectClient from './ProjectClient';
 
 const projectSlugs = [
-  "flutterlearn", "devkittools", "devkittoolsapp", "resumely", "resumelyapp", "removeflow",
+  "daycount", "flutterlearn", "devkittools", "devkittoolsapp", "resumely", "resumelyapp", "removeflow",
   "fooddash", "taskflow", "anzatexintl", "ghostdetector",
   "soravpn", "seelvpn", "yallavpn", "tytanvpn", "totemvpn",
   "gotovpn", "safenetvpn", "kryptonyme", "easyguard", "freeroam",

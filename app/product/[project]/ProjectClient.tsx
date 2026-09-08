@@ -29,12 +29,31 @@ import anzatexintl3 from "../../../public/anzatexintl3.png";
 import ghostdetector from "../../../public/ghostdetector.png";
 import devkittoolsApp from '../../../public/devkittools-app.png';
 import ProjectComponent from "@/app/components/projectComponent";
+import daycount from '../../../public/daycount.png';
 
 const ProjectClient = () => {
   const params = useParams();
   const projectParam = params?.project;
 
   const projectData: Record<string, any> = {
+
+    daycount: {
+      title: "Daycount",
+      year: "2026",
+      imagemain: daycount,
+      description:
+        "A privacy-focused collection of calculators for dates, money, work, and everyday decisions.",
+      articledata: [
+        {
+          imgsrc: daycount,
+          desc: "Daycount brings age, mortgage, loan, compound interest, salary, percentage, and rent-versus-buy calculators together in one clear, easy-to-navigate experience.",
+          title: "Daycount",
+          imgsrc1: daycount,
+          solution:
+            "We designed a calm, responsive calculator hub with strong visual hierarchy, consistent tool cards, and private in-browser calculations that make complex numbers feel approachable."
+        },
+      ],
+    },
 
     flutterlearn: {
       title: "FlutterLearn",

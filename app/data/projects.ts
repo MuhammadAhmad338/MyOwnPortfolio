@@ -20,9 +20,17 @@ import {
     FileText,
     WandSparkles,
     Smartphone,
+    CalendarDays,
 } from "lucide-react";
 
 export const projects = [
+    {
+        name: "Daycount",
+        description: "Everyday Calculator Suite",
+        route: "/product/daycount",
+        bg: "bg-emerald-600",
+        icon: CalendarDays,
+    },
     {
         name: "FlutterLearn",
         description: "Flutter Learning Platform",
