@@ -21,9 +21,25 @@ import {
     WandSparkles,
     Smartphone,
     CalendarDays,
+    Layers,
+    Network,
 } from "lucide-react";
 
 export const projects = [
+    {
+        name: "LoomFlow",
+        description: "Textile Operations Platform",
+        route: "/product/loomflow",
+        bg: "bg-emerald-800",
+        icon: Layers,
+    },
+    {
+        name: "ipwise",
+        description: "IP Lookup & Network Utility",
+        route: "/product/ipwise",
+        bg: "bg-teal-700",
+        icon: Network,
+    },
     {
         name: "Daycount",
         description: "Everyday Calculator Suite",

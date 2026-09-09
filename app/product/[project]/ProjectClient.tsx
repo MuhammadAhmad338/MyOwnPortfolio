@@ -30,12 +30,50 @@ import ghostdetector from "../../../public/ghostdetector.png";
 import devkittoolsApp from '../../../public/devkittools-app.png';
 import ProjectComponent from "@/app/components/projectComponent";
 import daycount from '../../../public/daycount.png';
+import loomflow from '../../../public/loomflow.png';
+import ipwise from '../../../public/ipwise.png';
 
 const ProjectClient = () => {
   const params = useParams();
   const projectParam = params?.project;
 
   const projectData: Record<string, any> = {
+
+    loomflow: {
+      title: "LoomFlow",
+      year: "2026",
+      imagemain: loomflow,
+      description:
+        "A comprehensive textile operations and management platform designed to connect inventory, production, orders, suppliers, and analytics.",
+      articledata: [
+        {
+          imgsrc: loomflow,
+          desc: "LoomFlow brings inventory tracking, multi-stage production monitoring (dyeing, weaving, finishing, and quality check), orders, and revenue analytics together in one cohesive workspace.",
+          title: "LoomFlow",
+          imgsrc1: loomflow,
+          solution:
+            "We crafted an intuitive operational dashboard featuring live status badges, production pipeline visualizations, real-time inventory alerts, and streamlined supplier and order workflows."
+        },
+      ],
+    },
+
+    ipwise: {
+      title: "ipwise",
+      year: "2026",
+      imagemain: ipwise,
+      description:
+        "A clean, noise-free IP lookup and network diagnostic platform delivering instant connection insights and geolocation without requiring an account.",
+      articledata: [
+        {
+          imgsrc: ipwise,
+          desc: "ipwise delivers a clearer picture of your internet connection with instant IPv4 and IPv6 detection, interactive geolocation mapping, ISP details, and one-click IP copying.",
+          title: "ipwise",
+          imgsrc1: ipwise,
+          solution:
+            "We designed a minimalist, privacy-first interface that eliminates unnecessary clutter, presenting critical connection details, live network status, and easy data export."
+        },
+      ],
+    },
 
     daycount: {
       title: "Daycount",
